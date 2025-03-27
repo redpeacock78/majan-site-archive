@@ -1,0 +1,611 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=Shift_JIS">
+<META name="GENERATOR" content="IBM HomePage Builder 2001 V5.0.3 for Windows">
+<META http-equiv="Content-Style-Type" content="text/css">
+<TITLE>Ａ式確率法</TITLE>
+</HEAD>
+<BODY bgcolor="#dfffdf" text="#000000" link="#0000ff" vlink="#cc0000" alink="#ffff00">
+<BLOCKQUOTE>
+<BLOCKQUOTE>
+<TABLE border="1" bgcolor="#000000">
+  <TBODY>
+    <TR>
+      <TD><FONT color="#ffff00"><I><FONT size="-1"><B><FONT size="+3">　</FONT></B><FONT size="+2"><FONT color="#ffff00"><FONT size="-1"><FONT size="+2">Laboratory</FONT></FONT></FONT></FONT></FONT></I><FONT size="+1">　研究室</FONT><B><FONT size="+2" color="#000000">。</FONT></B></FONT></TD>
+    </TR>
+  </TBODY>
+</TABLE>
+</BLOCKQUOTE>
+</BLOCKQUOTE>
+<BLOCKQUOTE>
+<BLOCKQUOTE>
+<TABLE border="1" bgcolor="#cccc00">
+  <TBODY>
+    <TR>
+      <TD bgcolor="#8080ff"><FONT color="#ffffff" size="+1"><BR>
+      　　　　（１０）Ａ式確率法<BR>
+      <BR>
+      </FONT></TD>
+    </TR>
+    <TR>
+      <TD bgcolor="#ffffd7">
+      <BLOCKQUOTE><BR>
+      　<FONT color="#ff0000">Ａ式</FONT>とは天野式、すなわち天野大三氏による聴牌効率算出法である。「天野」の頭文字をとって<FONT color="#ff0000">Ａ式</FONT>と呼ぶ。聴牌への有効度を計算するのに、<FONT color="#0000ff">Ｋ式</FONT>（川崎式）算出法では有効牌の残り枚数を比較した。しかしこのＡ式では、吃や石並の率も加味している。<BR>
+<BR>
+<IMG height="24" alt="五萬" src="man5.gif" width="18"><IMG height="24" alt="八萬" src="man8.gif" width="18"><IMG height="24" alt="九萬" src="man9.gif" width="18"><IMG height="24" alt="九萬" src="man9.gif" width="18"><IMG height="24" alt="三筒" src="pin3.gif" width="18"><IMG height="24" alt="五筒" src="pin5.gif" width="18"><IMG height="24" alt="六筒" src="pin6.gif" width="18"><IMG height="24" alt="七筒" src="pin7.gif" width="18"><BR>
+　という手。何を切っても自由であるが、一般的には<IMG height="24" alt="五萬" src="man5.gif" width="18">か<IMG height="24" alt="八萬" src="man8.gif" width="18">。そこでそれぞれを切った場合、聴牌への有効牌はどうなるかを下記の式に当てはめて計算する。<BR>
+<BR>
+<IMG height="24" alt="八萬" src="man8.gif" width="18">を切った場合　
+<TABLE border="1" bgcolor="#cccc00">
+  <TBODY>
+    <TR>
+      <TD bgcolor="#bbffbb">有効牌</TD>
+      <TD bgcolor="#bbffbb">摸率</TD>
+      <TD bgcolor="#bbffbb">吃率</TD>
+      <TD bgcolor="#bbffbb">ポン率</TD>
+    </TR>
+    <TR>
+      <TD bgcolor="#bfffbf">１筒</TD>
+      <TD bgcolor="#ffffff">4X1=4</TD>
+      <TD bgcolor="#ffffff">.</TD>
+      <TD bgcolor="#ffffff">.</TD>
+    </TR>
+    <TR>
+      <TD bgcolor="#bfffbf">２筒</TD>
+      <TD bgcolor="#ffffff">4X1=4</TD>
+      <TD bgcolor="#ffffff">.</TD>
+      <TD bgcolor="#ffffff">.</TD>
+    </TR>
+    <TR>
+      <TD bgcolor="#bfffbf">３筒</TD>
+      <TD bgcolor="#ffffff">3X1=3</TD>
+      <TD bgcolor="#ffffff">.</TD>
+      <TD bgcolor="#ffffff">.</TD>
+    </TR>
+    <TR>
+      <TD bgcolor="#bfffbf">４筒</TD>
+      <TD bgcolor="#ffffff">4X1=4</TD>
+      <TD bgcolor="#ffffff">4X(1/2)=2</TD>
+      <TD bgcolor="#ffffff">.</TD>
+    </TR>
+    <TR>
+      <TD bgcolor="#bfffbf">５筒</TD>
+      <TD bgcolor="#ffffff">3X1=3</TD>
+      <TD bgcolor="#ffffff">.</TD>
+      <TD bgcolor="#ffffff">.</TD>
+    </TR>
+    <TR>
+      <TD bgcolor="#bfffbf">８筒</TD>
+      <TD bgcolor="#ffffff">4X1=4</TD>
+      <TD bgcolor="#ffffff">4X(1/2)=2</TD>
+      <TD bgcolor="#ffffff">.</TD>
+    </TR>
+    <TR>
+      <TD bgcolor="#bfffbf">三万</TD>
+      <TD bgcolor="#ffffff">4X1=4</TD>
+      <TD bgcolor="#ffffff">.</TD>
+      <TD bgcolor="#ffffff">.</TD>
+    </TR>
+    <TR>
+      <TD bgcolor="#bfffbf">四万</TD>
+      <TD bgcolor="#ffffff">4X1=4</TD>
+      <TD bgcolor="#ffffff">.</TD>
+      <TD bgcolor="#ffffff">.</TD>
+    </TR>
+    <TR>
+      <TD bgcolor="#bfffbf">五万</TD>
+      <TD bgcolor="#ffffff">3X1=3</TD>
+      <TD bgcolor="#ffffff">.</TD>
+      <TD bgcolor="#ffffff">.</TD>
+    </TR>
+    <TR>
+      <TD bgcolor="#bfffbf">六万</TD>
+      <TD bgcolor="#ffffff">4X1=4</TD>
+      <TD bgcolor="#ffffff">.</TD>
+      <TD bgcolor="#ffffff">.</TD>
+    </TR>
+    <TR>
+      <TD bgcolor="#bfffbf">七万</TD>
+      <TD bgcolor="#ffffff">4X1=4</TD>
+      <TD bgcolor="#ffffff">.</TD>
+      <TD bgcolor="#ffffff">.</TD>
+    </TR>
+    <TR>
+      <TD bgcolor="#bfffbf">九万</TD>
+      <TD bgcolor="#ffffff">2X1=2</TD>
+      <TD bgcolor="#ffffff">.</TD>
+      <TD bgcolor="#ffffff">2X(7/4)=3.5</TD>
+    </TR>
+    <TR>
+      <TD bgcolor="#bfffbf">計12種</TD>
+      <TD bgcolor="#ffffff">　　４３</TD>
+      <TD bgcolor="#ffffff">　　　　　４</TD>
+      <TD bgcolor="#ffffff">　　　　　３.5</TD>
+    </TR>
+  </TBODY>
+</TABLE>
+<B>∴43+4+3.5=50.5</B>(この50.5を「牌価値」と称する)<BR>
+<BR>
+<IMG height="24" alt="五萬" src="man5.gif" width="18">を切った場合
+      <TABLE border="1" bgcolor="#cccc00">
+  <TBODY>
+    <TR>
+      <TD bgcolor="#c4ffc4">有効牌</TD>
+      <TD bgcolor="#c4ffc4">摸率</TD>
+      <TD bgcolor="#c4ffc4">吃率</TD>
+      <TD bgcolor="#c4ffc4">ポン率</TD>
+    </TR>
+    <TR>
+      <TD bgcolor="#bbffbb">１筒</TD>
+      <TD bgcolor="#ffffff">4X1=4</TD>
+      <TD bgcolor="#ffffff">.</TD>
+      <TD bgcolor="#ffffff">.</TD>
+    </TR>
+    <TR>
+      <TD bgcolor="#bbffbb">２筒</TD>
+      <TD bgcolor="#ffffff">4X1=4</TD>
+      <TD bgcolor="#ffffff">.</TD>
+      <TD bgcolor="#ffffff">.</TD>
+    </TR>
+    <TR>
+      <TD bgcolor="#bbffbb">３筒</TD>
+      <TD bgcolor="#ffffff">3X1=3</TD>
+      <TD bgcolor="#ffffff">.</TD>
+      <TD bgcolor="#ffffff">.</TD>
+    </TR>
+    <TR>
+      <TD bgcolor="#bbffbb">４筒</TD>
+      <TD bgcolor="#ffffff">4X1=4</TD>
+      <TD bgcolor="#ffffff">4X(1/2)=2</TD>
+      <TD bgcolor="#ffffff">.</TD>
+    </TR>
+    <TR>
+      <TD bgcolor="#bbffbb">５筒</TD>
+      <TD bgcolor="#ffffff">3X1=3</TD>
+      <TD bgcolor="#ffffff">.</TD>
+      <TD bgcolor="#ffffff">.</TD>
+    </TR>
+    <TR>
+      <TD bgcolor="#bbffbb">８筒</TD>
+      <TD bgcolor="#ffffff">4X1=4</TD>
+      <TD bgcolor="#ffffff">4X(1/2)=2</TD>
+      <TD bgcolor="#ffffff">.</TD>
+    </TR>
+    <TR>
+      <TD bgcolor="#bbffbb">六万</TD>
+      <TD bgcolor="#ffffff">4X1=4</TD>
+      <TD bgcolor="#ffffff">.</TD>
+      <TD bgcolor="#ffffff">.</TD>
+    </TR>
+    <TR>
+      <TD bgcolor="#bbffbb">七万</TD>
+      <TD bgcolor="#ffffff">4X1=4</TD>
+      <TD bgcolor="#ffffff">.4X(1/2)=2</TD>
+      <TD bgcolor="#ffffff">.</TD>
+    </TR>
+    <TR>
+      <TD bgcolor="#bbffbb">八万</TD>
+      <TD bgcolor="#ffffff">3X1=3</TD>
+      <TD bgcolor="#ffffff">.</TD>
+      <TD bgcolor="#ffffff">.</TD>
+    </TR>
+    <TR>
+      <TD bgcolor="#bbffbb">九万</TD>
+      <TD bgcolor="#ffffff">2X1=2</TD>
+      <TD bgcolor="#ffffff">.</TD>
+      <TD bgcolor="#ffffff">2X(7/4)=3.5</TD>
+    </TR>
+    <TR>
+      <TD bgcolor="#bbffbb">計10種</TD>
+      <TD bgcolor="#ffffff">　　３５</TD>
+      <TD bgcolor="#ffffff">　　　　　 ６</TD>
+      <TD bgcolor="#ffffff">　　　　　３.5</TD>
+    </TR>
+  </TBODY>
+</TABLE>
+      <B>∴35+6+3.5=44.5</B><BR>
+<BR>
+したがって<IMG height="24" alt="八萬" src="man8.gif" width="18">切りの方が聴牌チャンスが大きいと判定する。<BR>
+<BR>
+次の場合。<BR>
+<BR>
+<FONT size="+2"><IMG height="24" alt="七萬" src="man7.gif" width="18"><IMG height="24" alt="七萬" src="man7.gif" width="18"><IMG height="24" alt="九萬" src="man9.gif" width="18"><IMG height="24" alt="三筒" src="pin3.gif" width="18"><IMG height="24" alt="七筒" src="pin7.gif" width="18"><IMG height="24" alt="八筒" src="pin8.gif" width="18"><IMG height="24" alt="八筒" src="pin8.gif" width="18"><IMG height="24" alt="八筒" src="pin8.gif" width="18"> <BR>
+</FONT><BR>
+<IMG height="24" alt="九萬" src="man9.gif" width="18">を切った場合
+      <TABLE border="1" bgcolor="#cccc00">
+  <TBODY>
+    <TR>
+      <TD bgcolor="#c1ffc1">有効牌</TD>
+      <TD bgcolor="#c1ffc1">摸率</TD>
+      <TD bgcolor="#c1ffc1">吃率</TD>
+      <TD bgcolor="#c1ffc1">ポン率</TD>
+    </TR>
+    <TR>
+      <TD bgcolor="#bbffbb">七万</TD>
+      <TD bgcolor="#ffffff">2X1=2</TD>
+      <TD bgcolor="#ffffff">.</TD>
+      <TD bgcolor="#ffffff">2X(7/4)=3.5</TD>
+    </TR>
+    <TR>
+      <TD bgcolor="#bbffbb">１筒</TD>
+      <TD bgcolor="#ffffff">4X1=4</TD>
+      <TD bgcolor="#ffffff">.</TD>
+      <TD bgcolor="#ffffff">.</TD>
+    </TR>
+    <TR>
+      <TD bgcolor="#bbffbb">２筒</TD>
+      <TD bgcolor="#ffffff">4X1=4</TD>
+      <TD bgcolor="#ffffff">.</TD>
+      <TD bgcolor="#ffffff">.</TD>
+    </TR>
+    <TR>
+      <TD bgcolor="#bbffbb">３筒</TD>
+      <TD bgcolor="#ffffff">3X1=3</TD>
+      <TD bgcolor="#ffffff">.</TD>
+      <TD bgcolor="#ffffff">.</TD>
+    </TR>
+    <TR>
+      <TD bgcolor="#bbffbb">４筒</TD>
+      <TD bgcolor="#ffffff">4X1=4</TD>
+      <TD bgcolor="#ffffff">.</TD>
+      <TD bgcolor="#ffffff">.</TD>
+    </TR>
+    <TR>
+      <TD bgcolor="#bbffbb">５筒</TD>
+      <TD bgcolor="#ffffff">4X1=4</TD>
+      <TD bgcolor="#ffffff">.</TD>
+      <TD bgcolor="#ffffff">.</TD>
+    </TR>
+    <TR>
+      <TD bgcolor="#bbffbb">６筒</TD>
+      <TD bgcolor="#ffffff">4X1=4</TD>
+      <TD bgcolor="#ffffff">4X(1/2)=2</TD>
+      <TD bgcolor="#ffffff">.</TD>
+    </TR>
+    <TR>
+      <TD bgcolor="#bbffbb">７筒</TD>
+      <TD bgcolor="#ffffff">3X1=3</TD>
+      <TD bgcolor="#ffffff">.</TD>
+      <TD bgcolor="#ffffff">.</TD>
+    </TR>
+    <TR>
+      <TD bgcolor="#bbffbb">８筒</TD>
+      <TD bgcolor="#ffffff">1X1=1</TD>
+      <TD bgcolor="#ffffff">.</TD>
+      <TD bgcolor="#ffffff">1X(7/4)=1.75</TD>
+    </TR>
+    <TR>
+      <TD bgcolor="#bbffbb">９筒</TD>
+      <TD bgcolor="#ffffff">4X1=4</TD>
+      <TD bgcolor="#ffffff">4X(1/2)=2</TD>
+      <TD bgcolor="#ffffff">.</TD>
+    </TR>
+    <TR>
+      <TD bgcolor="#bbffbb">計10種</TD>
+      <TD bgcolor="#ffffff">　　３３</TD>
+      <TD bgcolor="#ffffff">　　　　　 ４</TD>
+      <TD bgcolor="#ffffff">　　　　　５.25</TD>
+    </TR>
+  </TBODY>
+</TABLE>
+      <B>∴33+4+5.25=42.25<BR>
+</B><BR>
+<IMG height="24" alt="三筒" src="pin3.gif" width="18">を切った場合
+      <TABLE border="1" bgcolor="#cccc00">
+  <TBODY>
+    <TR>
+      <TD height="18" bgcolor="#bbffbb">有効牌</TD>
+      <TD height="18" bgcolor="#bbffbb">摸率</TD>
+      <TD height="18" bgcolor="#bbffbb">吃率</TD>
+      <TD height="18" bgcolor="#bbffbb">ポン率</TD>
+    </TR>
+    <TR>
+      <TD height="16" bgcolor="#bbffbb">七万</TD>
+      <TD height="16" bgcolor="#ffffff">2X1=2</TD>
+      <TD height="16" bgcolor="#ffffff">.</TD>
+      <TD height="16" bgcolor="#ffffff">2X(7/4)=3.5</TD>
+    </TR>
+    <TR>
+      <TD bgcolor="#bbffbb">八万</TD>
+      <TD bgcolor="#ffffff">4X1=4</TD>
+      <TD bgcolor="#ffffff">4X(1/2)=2</TD>
+      <TD bgcolor="#ffffff">.</TD>
+    </TR>
+    <TR>
+      <TD bgcolor="#bbffbb">九万</TD>
+      <TD bgcolor="#ffffff">3X1=3</TD>
+      <TD bgcolor="#ffffff">.</TD>
+      <TD bgcolor="#ffffff">.</TD>
+    </TR>
+    <TR>
+      <TD bgcolor="#bbffbb">５筒</TD>
+      <TD bgcolor="#ffffff">4X1=4</TD>
+      <TD bgcolor="#ffffff">.</TD>
+      <TD bgcolor="#ffffff">.</TD>
+    </TR>
+    <TR>
+      <TD bgcolor="#bbffbb">６筒</TD>
+      <TD bgcolor="#ffffff">4X1=4</TD>
+      <TD bgcolor="#ffffff">4X(1/2)=2</TD>
+      <TD bgcolor="#ffffff">.</TD>
+    </TR>
+    <TR>
+      <TD bgcolor="#bbffbb">７筒</TD>
+      <TD bgcolor="#ffffff">3X1=3</TD>
+      <TD bgcolor="#ffffff">.</TD>
+      <TD bgcolor="#ffffff">.</TD>
+    </TR>
+    <TR>
+      <TD bgcolor="#bbffbb">８筒</TD>
+      <TD bgcolor="#ffffff">1X1=1</TD>
+      <TD bgcolor="#ffffff">.</TD>
+      <TD bgcolor="#ffffff">1X(7/4)=1.75</TD>
+    </TR>
+    <TR>
+      <TD bgcolor="#bbffbb">９筒</TD>
+      <TD bgcolor="#ffffff">4X1=4</TD>
+      <TD bgcolor="#ffffff">4X(1/2)=2</TD>
+      <TD bgcolor="#ffffff">.</TD>
+    </TR>
+    <TR>
+      <TD bgcolor="#bbffbb">計８種</TD>
+      <TD bgcolor="#ffffff">　　２５</TD>
+      <TD bgcolor="#ffffff">　　　　　 ６</TD>
+      <TD bgcolor="#ffffff">　　　　　５.25</TD>
+    </TR>
+  </TBODY>
+</TABLE>
+      <B>∴25+6+5.25=36.25</B><BR>
+<BR>
+従って<IMG height="24" alt="九萬" src="man9.gif" width="18">切りの方が聴牌チャンスが大きいと判定する。<BR>
+<BR>
+　このケースの場合、Ｋ式算出法とＡ式確率法では、どちらを切った方が聴牌チャンスが大きいかという判定で同一の結果がでる。しかし常に同一の結果が出るわけではない。たとえば次のケース。<BR>
+<BR>
+<IMG height="24" alt="七萬" src="man7.gif" width="18"><IMG height="24" alt="七萬" src="man7.gif" width="18"><IMG height="24" alt="八萬" src="man8.gif" width="18"><IMG height="24" alt="二筒" src="pin2.gif" width="18"><IMG height="24" alt="三筒" src="pin3.gif" width="18"><IMG height="24" alt="三筒" src="pin3.gif" width="18"><IMG height="24" alt="四筒" src="pin4.gif" width="18"><IMG height="24" alt="三索" src="sou3.gif" width="18"><BR>
+<BR>
+　残り枚数で聴牌チャンスを判定するＫ式では<FONT size="+1" color="#0000ff"><IMG height="24" alt="八萬" src="man8.gif" width="18"></FONT>切り（聴牌有効牌37枚）/<FONT color="#0000ff"><IMG height="24" alt="三筒" src="pin3.gif" width="18"></FONT>切り（聴牌有効牌32枚）/<FONT color="#0000ff"><IMG height="24" alt="三索" src="sou3.gif" width="18"></FONT>切り（聴牌有効牌29枚）の順となる。しかしＡ式では吃率/ポン率が加味されるため、<FONT color="#0000ff"><IMG height="24" alt="八萬" src="man8.gif" width="18"></FONT>切り（牌価値52.0）/<FONT color="#0000ff"><IMG height="24" alt="三索" src="sou3.gif" width="18"></FONT>切り（牌価値48.0）/<FONT color="#0000ff"><IMG height="24" alt="三筒" src="pin3.gif" width="18"></FONT>切り（牌価値39.5）の順で聴牌チャンスが大きいという結果が出る。<BR>
+<BR>
+<IMG height="24" alt="八萬" src="man8.gif" width="18">を切った場合
+      <TABLE border="1" bgcolor="#cccc00">
+  <TBODY>
+    <TR>
+      <TD bgcolor="#c4ffc4">有効牌</TD>
+      <TD bgcolor="#c4ffc4">摸率</TD>
+      <TD bgcolor="#c4ffc4">吃率</TD>
+      <TD bgcolor="#c4ffc4">ポン率</TD>
+    </TR>
+    <TR>
+      <TD bgcolor="#bbffbb">七万</TD>
+      <TD bgcolor="#ffffff">2X1=2</TD>
+      <TD bgcolor="#ffffff">.</TD>
+      <TD bgcolor="#ffffff">2X(7/4)=3.5</TD>
+    </TR>
+    <TR>
+      <TD bgcolor="#bbffbb">１筒</TD>
+      <TD bgcolor="#ffffff">4X1=4</TD>
+      <TD bgcolor="#ffffff">4X(1/2)=2</TD>
+      <TD bgcolor="#ffffff">.</TD>
+    </TR>
+    <TR>
+      <TD bgcolor="#bbffbb">２筒</TD>
+      <TD bgcolor="#ffffff">3X1=3</TD>
+      <TD bgcolor="#ffffff">3X(1/2)=2</TD>
+      <TD bgcolor="#ffffff">.</TD>
+    </TR>
+    <TR>
+      <TD bgcolor="#bbffbb">３筒</TD>
+      <TD bgcolor="#ffffff">2X1=2</TD>
+      <TD bgcolor="#ffffff">2X(1/2)=1</TD>
+      <TD bgcolor="#ffffff">2X(7/4)=3.5.</TD>
+    </TR>
+    <TR>
+      <TD bgcolor="#bbffbb">４筒</TD>
+      <TD bgcolor="#ffffff">3X1=3</TD>
+      <TD bgcolor="#ffffff">3X(1/2)=1.5</TD>
+      <TD bgcolor="#ffffff"></TD>
+    </TR>
+    <TR>
+      <TD bgcolor="#bbffbb">５筒</TD>
+      <TD bgcolor="#ffffff">4X1=4</TD>
+      <TD bgcolor="#ffffff">4X(1/2)=2</TD>
+      <TD bgcolor="#ffffff"></TD>
+    </TR>
+    <TR>
+      <TD bgcolor="#bbffbb">１索</TD>
+      <TD bgcolor="#ffffff">4X1=4</TD>
+      <TD bgcolor="#ffffff">.</TD>
+      <TD bgcolor="#ffffff">.</TD>
+    </TR>
+    <TR>
+      <TD bgcolor="#bbffbb">２索</TD>
+      <TD bgcolor="#ffffff">4X1=4</TD>
+      <TD bgcolor="#ffffff">.</TD>
+      <TD bgcolor="#ffffff">.</TD>
+    </TR>
+    <TR>
+      <TD bgcolor="#bbffbb">３索</TD>
+      <TD bgcolor="#ffffff">3X1=3</TD>
+      <TD bgcolor="#ffffff">.</TD>
+      <TD bgcolor="#ffffff">.</TD>
+    </TR>
+    <TR>
+      <TD bgcolor="#bbffbb">４索</TD>
+      <TD bgcolor="#ffffff">4X1=4</TD>
+      <TD bgcolor="#ffffff">.</TD>
+      <TD bgcolor="#ffffff">.</TD>
+    </TR>
+    <TR>
+      <TD bgcolor="#bbffbb">５索</TD>
+      <TD bgcolor="#ffffff">4X1=4</TD>
+      <TD bgcolor="#ffffff">.</TD>
+      <TD bgcolor="#ffffff">.</TD>
+    </TR>
+    <TR>
+      <TD bgcolor="#bbffbb">計11種</TD>
+      <TD bgcolor="#ffffff">　　３７</TD>
+      <TD bgcolor="#ffffff">　　　　　 　８</TD>
+      <TD bgcolor="#ffffff">　　　　　　　７</TD>
+    </TR>
+  </TBODY>
+</TABLE>
+      <B>∴37+8+7=52.00<BR>
+<BR>
+</B><IMG height="24" alt="三索" src="sou3.gif" width="18">を切った場合
+      <TABLE border="1" bgcolor="#cccc00">
+  <TBODY>
+    <TR>
+      <TD bgcolor="#bfffbf">有効牌</TD>
+      <TD bgcolor="#bfffbf">摸率</TD>
+      <TD bgcolor="#bfffbf">吃率</TD>
+      <TD bgcolor="#bfffbf">ポン率</TD>
+    </TR>
+    <TR>
+      <TD bgcolor="#c4ffc4">六万</TD>
+      <TD bgcolor="#ffffff">4X1=4</TD>
+      <TD bgcolor="#ffffff">4X(1/2)=2</TD>
+      <TD bgcolor="#ffffff">.</TD>
+    </TR>
+    <TR>
+      <TD bgcolor="#c4ffc4">七万</TD>
+      <TD bgcolor="#ffffff">2X1=2</TD>
+      <TD bgcolor="#ffffff">.</TD>
+      <TD bgcolor="#ffffff">2X(7/4)=3.5</TD>
+    </TR>
+    <TR>
+      <TD bgcolor="#c4ffc4">八万</TD>
+      <TD bgcolor="#ffffff">3X1=3</TD>
+      <TD bgcolor="#ffffff">.</TD>
+      <TD bgcolor="#ffffff">.</TD>
+    </TR>
+    <TR>
+      <TD bgcolor="#c4ffc4">九万</TD>
+      <TD bgcolor="#ffffff">4X1=4</TD>
+      <TD bgcolor="#ffffff">4X(1/2)=2</TD>
+      <TD bgcolor="#ffffff">.</TD>
+    </TR>
+    <TR>
+      <TD bgcolor="#c4ffc4">１筒</TD>
+      <TD bgcolor="#ffffff">4X1=4</TD>
+      <TD bgcolor="#ffffff">.4X(1/2)=2</TD>
+      <TD bgcolor="#ffffff">.</TD>
+    </TR>
+    <TR>
+      <TD bgcolor="#c4ffc4">２筒</TD>
+      <TD bgcolor="#ffffff">3X1=3</TD>
+      <TD bgcolor="#ffffff">3X(1/2)=1.5</TD>
+      <TD bgcolor="#ffffff">.</TD>
+    </TR>
+    <TR>
+      <TD bgcolor="#c4ffc4">３筒</TD>
+      <TD bgcolor="#ffffff">2X1=2</TD>
+      <TD bgcolor="#ffffff">2X(1/2)=1</TD>
+      <TD bgcolor="#ffffff">2X(7/4)=3.5</TD>
+    </TR>
+    <TR>
+      <TD bgcolor="#c4ffc4">４筒</TD>
+      <TD bgcolor="#ffffff">3X1=3</TD>
+      <TD bgcolor="#ffffff">3X(1/2)=1.5</TD>
+      <TD bgcolor="#ffffff">.</TD>
+    </TR>
+    <TR>
+      <TD bgcolor="#c4ffc4">５筒</TD>
+      <TD bgcolor="#ffffff">4X1=4</TD>
+      <TD bgcolor="#ffffff">4X(1/2)=2</TD>
+      <TD bgcolor="#ffffff">.</TD>
+    </TR>
+    <TR>
+      <TD bgcolor="#c4ffc4">計９種</TD>
+      <TD bgcolor="#ffffff">　　２９</TD>
+      <TD bgcolor="#ffffff">　　　　　 １２</TD>
+      <TD bgcolor="#ffffff">　　　　　　７</TD>
+    </TR>
+  </TBODY>
+</TABLE>
+      <B>∴29+12+7=48.00</B><BR>
+<BR>
+<IMG height="24" alt="三筒" src="pin3.gif" width="18">を切った場合 <BR>
+      <TABLE border="1" bgcolor="#cccc00">
+  <TBODY>
+    <TR>
+      <TD bgcolor="#bbffbb">有効牌</TD>
+      <TD bgcolor="#bbffbb">摸率</TD>
+      <TD bgcolor="#bbffbb">吃率</TD>
+      <TD bgcolor="#bbffbb">ポン率</TD>
+    </TR>
+    <TR>
+      <TD bgcolor="#bbffbb">六万</TD>
+      <TD bgcolor="#ffffff">4X1=4</TD>
+      <TD bgcolor="#ffffff">4X(1/2)=2</TD>
+      <TD bgcolor="#ffffff">.</TD>
+    </TR>
+    <TR>
+      <TD bgcolor="#bbffbb">七万</TD>
+      <TD bgcolor="#ffffff">2X1=2</TD>
+      <TD bgcolor="#ffffff">.</TD>
+      <TD bgcolor="#ffffff">2X(7/4)=3.5</TD>
+    </TR>
+    <TR>
+      <TD bgcolor="#bbffbb">八万</TD>
+      <TD bgcolor="#ffffff">3X1=3</TD>
+      <TD bgcolor="#ffffff">.</TD>
+      <TD bgcolor="#ffffff">.</TD>
+    </TR>
+    <TR>
+      <TD bgcolor="#bbffbb">九万</TD>
+      <TD bgcolor="#ffffff">4X1=4</TD>
+      <TD bgcolor="#ffffff">4X(1/2)=2</TD>
+      <TD bgcolor="#ffffff">.</TD>
+    </TR>
+    <TR>
+      <TD bgcolor="#bbffbb">１索</TD>
+      <TD bgcolor="#ffffff">4X1=4</TD>
+      <TD bgcolor="#ffffff">.</TD>
+      <TD bgcolor="#ffffff">.</TD>
+    </TR>
+    <TR>
+      <TD bgcolor="#bbffbb">２索</TD>
+      <TD bgcolor="#ffffff">4X1=4</TD>
+      <TD bgcolor="#ffffff">.</TD>
+      <TD bgcolor="#ffffff">.</TD>
+    </TR>
+    <TR>
+      <TD bgcolor="#bbffbb">３索</TD>
+      <TD bgcolor="#ffffff">3X1=3</TD>
+      <TD bgcolor="#ffffff">.</TD>
+      <TD bgcolor="#ffffff">.</TD>
+    </TR>
+    <TR>
+      <TD bgcolor="#bbffbb">４索</TD>
+      <TD bgcolor="#ffffff">4X1=4</TD>
+      <TD bgcolor="#ffffff">.</TD>
+      <TD bgcolor="#ffffff">.</TD>
+    </TR>
+    <TR>
+      <TD bgcolor="#bbffbb">５索</TD>
+      <TD bgcolor="#ffffff">4X1=4</TD>
+      <TD bgcolor="#ffffff">.</TD>
+      <TD bgcolor="#ffffff">.</TD>
+    </TR>
+    <TR>
+      <TD bgcolor="#bbffbb">計９種</TD>
+      <TD bgcolor="#ffffff">　　３２</TD>
+      <TD bgcolor="#ffffff">　　　　　 ４</TD>
+      <TD bgcolor="#ffffff">　　　　　3.5</TD>
+    </TR>
+  </TBODY>
+</TABLE>
+      <B>∴32+4+3.5=39.5</B><BR>
+<BR>
+      　もちろん実際にゲームしているとき、こういう計算をしているヒマはない。また明らかに残り牌が少なくても、手役の必要上、牌効率など考えていられないこともある。これはあくまで麻雀数理の１考察という問題である。<BR>
+      <BR>
+      </BLOCKQUOTE>
+      </TD>
+    </TR>
+  </TBODY>
+</TABLE>
+</BLOCKQUOTE>
+</BLOCKQUOTE>
+<P align="center"><A href="labo9.html">以前へ</A>　　<A href="labo11.html">以降へ</A>　　<A href="http://www9.plala.or.jp/majan/LABORATORY.ntml">目次へ</A></P>
+</BODY>
+</HTML>

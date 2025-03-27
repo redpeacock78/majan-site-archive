@@ -1,0 +1,489 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=Shift_JIS">
+<META name="GENERATOR" content="IBM WebSphere Homepage Builder V6.0.1 for Windows">
+<META http-equiv="Content-Style-Type" content="text/css">
+<TITLE>役の複合と得点計算システム</TITLE>
+</HEAD>
+<BODY bgcolor="#d7ffd7" vlink="#cc0000" alink="#ffff00">
+<BLOCKQUOTE>
+<BLOCKQUOTE>
+<TABLE border="1" bgcolor="#000000">
+  <TBODY>
+    <TR>
+      <TD><FONT size="+2" color="#ffff00"><I>　Laboratory</I></FONT><B><FONT size="+2" color="#ffff00"><I>　</I></FONT></B><FONT size="+1" color="#ffff00">研究室</FONT><B><FONT size="+2" color="#000000"><FONT size="+2" color="#000000"><I>。</I></FONT></FONT></B></TD>
+    </TR>
+  </TBODY>
+</TABLE>
+</BLOCKQUOTE>
+</BLOCKQUOTE>
+<BLOCKQUOTE>
+<BLOCKQUOTE>
+<TABLE border="1" bgcolor="#cccccc">
+  <TBODY>
+    <TR>
+      <TD bgcolor="#8080ff"><FONT size="-1" color="#ffffff"><FONT size="+1"><BR>
+      　　　　（49）役の複合と得点計算システム</FONT><FONT size="+1" color="#ffff00"><FONT size="+1" color="#ffff00"><BR>
+      </FONT><BR>
+      </FONT></FONT></TD>
+    </TR>
+    <TR>
+      <TD bgcolor="#ffffc8" valign="top">
+      <BLOCKQUOTE><BR>
+      　日本でメジャーにプレーされている一般のリーチ麻雀<FONT size="-1">（以下、</FONT><FONT color="#0000cc" size="-1">日麻</FONT><FONT size="-1">と）</FONT>には<FONT color="#cc0000">縛り</FONT>ルールがある<FONT size="-1">（最低 一翻の役が無いと和了できない、という制約）</FONT>。その最低のアガリ条件である一翻<FONT size="-1">（場ゾロ込みで三翻。以下同）</FONT>で和了すれば、親で<FONT color="#0000cc">1,500点</FONT>の得点となる<FONT size="-1">（30符アガリの場合。以下同）</FONT>。そこで親がその一翻手を４連続で和了すれば、合計は<FONT color="#0000cc">6,000点</FONT>となる。一翻は一翻なので、ロンアガリでもツモアガリでも１回の得点に変わりはない<FONT size="-1">（符計算から生じるロンアガリ ツモアガリにおける誤差は除く）</FONT>。</BLOCKQUOTE>
+      <BLOCKQUOTE>　しかし一般日麻は倍々計算。そこで４連続の一翻ではなく 一度に四翻というアガリであれば、４連続の一翻アガリの<FONT color="#ff0000">倍額</FONT> <FONT color="#0000cc">12,000点</FONT>となる。ここに麻雀ゲームの魅力の一つ、<FONT color="#cc0000">役の複合の妙味</FONT>がある。そこで ただのピンフでも、できればタンヤオ、できればイーペーコー 、さらにはサンシキなどを絡めようと努力が発生する。１枚変わればサンシキだ、一通だということになれば、もう必死。そんな苦労をしてせっかく張ったのに安めをツモアガったりすれば、
+      フリテンに構えてでも がんばる。σ(-_-)　</BLOCKQUOTE>
+      <BLOCKQUOTE>　さらに日麻では<FONT color="#0000cc">門前アガリ</FONT>、特に<FONT color="#cc0000">リーチ</FONT>を掛けてのアガリ インパクトが大きい。リーチアガリの特典である一発やウラドラがプラスされることはもちろんであるが、それが空振りに終わっても、リーチの一翻は確保される。そこへツモの一翻が加算されれば、タンヤオ
+      ドラ１の手でも<FONT color="#0000cc">四翻満貫</FONT>が見込まれる。そこで日麻では、役の複合もさることながら <FONT color="#cc0000">門前での手作り</FONT>が基本となる。</BLOCKQUOTE>
+      <BLOCKQUOTE>　<FONT color="#0000cc">五味康祐</FONT>という高名な剣豪作家がいた。麻雀が大好きで、<A href="book46.html">麻雀一刀斉</A>という麻雀小説や「<FONT color=#990000>五味麻雀教室</FONT>」<FONT 
+size=-1>(昭41年、光文社刊)</FONT>という戦術書も書いているくらい。その五味氏が あるときも知人と卓を囲んだ。ところが最初のゲームの東の１局、起家の五味氏の第一打牌を南家が両門でチー。それを見た五味氏、「<FONT color="#0000cc">こんなの麻雀じゃねぇ</FONT>」と云って席を立ってしまった。このエピソード、ウソかホントか知らないけれど、それほど日麻は門前アガリへの指向が強い。</BLOCKQUOTE>
+      <BLOCKQUOTE>　とはいえ エンドレスで倍々計算を続けると,五翻で<FONT color="#0000cc">24,000点〜八翻</FONT><FONT color="#000000">で</FONT><FONT color="#0000cc">192,000点</FONT>となってしまう。これでは点棒がいくらあっても不足する。そこで一般リーチ麻雀では、四翻以上は<FONT color="#cc0000">“両翻刻みの５割り増し”</FONT>というブレーキを掛けている。それでも一翻手を連続で和了した場合と、その連続一翻数を一度に和了した場合の得点は、変則的ながらも大きな差が出る。単純に云って四翻アガリ<FONT size="-1">（場ゾロ入りでは六翻）</FONT>の12,000点は、一翻を４連続和了した合計点6,000点の倍額となる<FONT size="-1">（八翻でも同様）</FONT>。すなわち一般リーチ麻雀においては小さな翻数の和了を続けるより、その翻数分の役を重ねて一度に和了した方が得点が大きくなる。すなわち日麻では、役は重ねれば重ねるほど得点インパクトは大きくなる。そんな状況を一覧表にすると
+      こんな感じ（）。</BLOCKQUOTE>
+      <BLOCKQUOTE>
+      <BLOCKQUOTE>
+      <TABLE border="1" bgcolor="#cccccc">
+        <TBODY>
+          <TR>
+            <TD align="center" bgcolor="#ffffff" colspan="6">一般リーチ麻雀<FONT size="-1"><BR>
+            </FONT></TD>
+            <TD align="center" bgcolor="#e1e1ff" rowspan="10"><FONT size="-1">・</FONT></TD>
+            <TD align="center" bgcolor="#ffffff">＊</TD>
+          </TR>
+          <TR>
+            <TD align="center" bgcolor="#ffffff"><FONT size="-1">一翻アガリ<BR>
+            連続回数</FONT></TD>
+            <TD align="center" bgcolor="#ffffff"><FONT size="-1">得点</FONT></TD>
+            <TD align="center" bgcolor="#ffffff"><FONT size="-1">得点計</FONT></TD>
+            <TD bgcolor="#ffffff" rowspan="9">・</TD>
+            <TD align="center" bgcolor="#ffffff"><FONT size="-1">和了翻数</FONT><BR>
+            <FONT size="-1">（場ゾロ抜き<BR>
+            の翻数）</FONT></TD>
+            <TD align="center" bgcolor="#ffffff"><FONT size="-1">得点</FONT></TD>
+            <TD align="center" bgcolor="#ffffff"><FONT size="-1">両者の</FONT><BR>
+            <FONT size="-1">得点差</FONT></TD>
+          </TR>
+          <TR>
+            <TD align="center" bgcolor="#ffffff">１</TD>
+            <TD bgcolor="#ffffff">1,500</TD>
+            <TD align="center" bgcolor="#ffffff">−</TD>
+            <TD bgcolor="#ffffff" align="center">一翻</TD>
+            <TD align="right" bgcolor="#ffffff">1,500</TD>
+            <TD align="center" bgcolor="#ffffff"><FONT size="-1">ナシ</FONT></TD>
+          </TR>
+          <TR>
+            <TD align="center" bgcolor="#ffffff">２</TD>
+            <TD bgcolor="#ffffff">1,500</TD>
+            <TD align="right" bgcolor="#ffffff">3,000</TD>
+            <TD bgcolor="#ffffff" align="center">二翻</TD>
+            <TD align="right" bgcolor="#ffffff">3,000</TD>
+            <TD align="center" bgcolor="#ffffff"><FONT size="-1">ナシ</FONT></TD>
+          </TR>
+          <TR>
+            <TD align="center" bgcolor="#ffffff">３</TD>
+            <TD bgcolor="#ffffff">1,500</TD>
+            <TD align="right" bgcolor="#ffffff">4,500</TD>
+            <TD bgcolor="#ffffff" align="center">三翻</TD>
+            <TD align="right" bgcolor="#ffffff">6,000</TD>
+            <TD align="right" bgcolor="#ffffff">＋<FONT color="#0000cc">1,500</FONT></TD>
+          </TR>
+          <TR>
+            <TD align="center" bgcolor="#ffffff">４</TD>
+            <TD bgcolor="#ffffff">1,500</TD>
+            <TD align="right" bgcolor="#ffffff">6,000</TD>
+            <TD bgcolor="#ffffff" align="center">四翻<FONT size="-1">（満貫）</FONT></TD>
+            <TD bgcolor="#ffffff">12,000</TD>
+            <TD align="right" bgcolor="#ffffff"><FONT color="#0000cc">＋6,000</FONT></TD>
+          </TR>
+          <TR>
+            <TD align="center" bgcolor="#ffffff">５</TD>
+            <TD bgcolor="#ffffff">1,500</TD>
+            <TD align="right" bgcolor="#ffffff">7,500</TD>
+            <TD bgcolor="#ffffff" align="center">五翻</TD>
+            <TD align="center" bgcolor="#ffffff"><FONT size="-1">（同上）</FONT></TD>
+            <TD align="right" bgcolor="#ffffff"><FONT color="#0000cc">＋4,500</FONT></TD>
+          </TR>
+          <TR>
+            <TD align="center" bgcolor="#ffffff">６</TD>
+            <TD bgcolor="#ffffff">1,500</TD>
+            <TD align="right" bgcolor="#ffffff">9,000</TD>
+            <TD bgcolor="#ffffff" align="center">六翻<FONT size="-1">（跳満）</FONT></TD>
+            <TD bgcolor="#ffffff">18,000</TD>
+            <TD align="right" bgcolor="#ffffff"><FONT color="#0000cc">＋9,000</FONT></TD>
+          </TR>
+          <TR>
+            <TD align="center" bgcolor="#ffffff">７</TD>
+            <TD bgcolor="#ffffff">1,500</TD>
+            <TD bgcolor="#ffffff" align="right">10,500</TD>
+            <TD bgcolor="#ffffff" align="center">七翻</TD>
+            <TD align="center" bgcolor="#ffffff"><FONT size="-1">（同上）</FONT></TD>
+            <TD align="right" bgcolor="#ffffff"><FONT color="#0000cc">＋7,500</FONT></TD>
+          </TR>
+          <TR>
+            <TD align="center" bgcolor="#ffffff">８</TD>
+            <TD bgcolor="#ffffff">1,500</TD>
+            <TD bgcolor="#ffffff" align="right">12,000</TD>
+            <TD bgcolor="#ffffff" align="center">八翻<FONT size="-1">（倍満）</FONT></TD>
+            <TD bgcolor="#ffffff">24,000</TD>
+            <TD bgcolor="#ffffff"><FONT color="#0000cc">＋12,000</FONT></TD>
+          </TR>
+        </TBODY>
+      </TABLE>
+      <FONT size="-1" color="#000099">※番外要素（積み棒の点数とか５本場から両縛とか、あるいは八連荘など）は除外。</FONT></BLOCKQUOTE>
+      </BLOCKQUOTE>
+      <BLOCKQUOTE>　最近、公式中麻をプレーする人も増えてきた。公式中麻に親子の別はない。そこで誰が和了しても得点は同じ。それはじつに結構な話であるが、得点は一般リーチ麻雀と違ってアガリポイントの加算方式。ただし公式中麻も一般リーチ麻雀と同じような<FONT color="#cc0000">縛り</FONT>がある<FONT size="-1">（最低、８点の役が無いと和了できないという制約）</FONT>。そこで最低の和了点は８点となる。その和了点に、１人８点 計24点の底点<FONT size="-1">（ボーナス点）</FONT>が加算される。そこでＡプレーヤーがBプレーヤーから８点の手をロンアガリすれば、計32点の得点となる(<FONT color="#cc0000" size="+1">８</FONT><FONT color="#0000cc" size="-1">（B支払い和了点）</FONT><FONT color="#000000" size="+1">＋</FONT><FONT color="#cc0000" size="+1">24</FONT><FONT color="#0000cc" size="-1">（ＢCD支払い底点）</FONT><FONT size="+1">=</FONT><FONT size="+1" color="#cc0000">32</FONT><FONT size="+1">点</FONT>）。その８点の連続アガリ合計点と、その回数分を１回で和了した得点を一覧表にすると こんな感じ。
+      <BLOCKQUOTE>
+      <TABLE border="1" bgcolor="#cccccc">
+        <TBODY>
+          <TR>
+            <TD colspan="9" align="center" bgcolor="#ffffff">公式中麻</TD>
+            <TD align="center" bgcolor="#ddddff" rowspan="11">・</TD>
+            <TD align="center" bgcolor="#ffffff" rowspan="2">＊</TD>
+          </TR>
+          <TR>
+            <TD colspan="5" align="center" bgcolor="#ffffff"><FONT size="-1">８点を連続ロンアガリした場合</FONT></TD>
+            <TD align="center" bgcolor="#ffffff" rowspan="10">・</TD>
+            <TD align="center" bgcolor="#ffffff" colspan="3"><FONT size="-1">８点の倍数手を<BR>
+            ロンアガリした場合</FONT></TD>
+          </TR>
+          <TR>
+            <TD bgcolor="#ffffff"><FONT size="-1">連続回数</FONT></TD>
+            <TD bgcolor="#ffffff"><FONT size="-1">和了点</FONT></TD>
+            <TD bgcolor="#ffffff"><FONT size="-1">底点</FONT></TD>
+            <TD bgcolor="#ffffff"><FONT size="-1">得点</FONT></TD>
+            <TD bgcolor="#ffffff"><FONT size="-1">得点<BR>
+            合計</FONT></TD>
+            <TD bgcolor="#ffffff" align="center"><FONT size="-1">和了点</FONT></TD>
+            <TD bgcolor="#ffffff" align="center"><FONT size="-1">底点</FONT></TD>
+            <TD bgcolor="#ffffff" align="center"><FONT size="-1">得点</FONT></TD>
+            <TD bgcolor="#ffffff"><FONT size="-1">両者の<BR>
+            得点差</FONT></TD>
+          </TR>
+          <TR>
+            <TD align="center" bgcolor="#ffffff">１<FONT size="-1">回</FONT></TD>
+            <TD align="center" bgcolor="#ffffff">８</TD>
+            <TD align="right" bgcolor="#ffffff">24</TD>
+            <TD bgcolor="#ffffff" align="right">32</TD>
+            <TD bgcolor="#ffffff">32</TD>
+            <TD align="right" bgcolor="#ffffff">8</TD>
+            <TD align="right" bgcolor="#ffffff">24</TD>
+            <TD align="right" bgcolor="#ffffff">32</TD>
+            <TD align="center" bgcolor="#ffffff"><FONT size="-1">ナシ</FONT></TD>
+          </TR>
+          <TR>
+            <TD align="center" bgcolor="#ffffff">２<FONT size="-1">回</FONT></TD>
+            <TD align="center" bgcolor="#ffffff">８</TD>
+            <TD align="right" bgcolor="#ffffff">24</TD>
+            <TD bgcolor="#ffffff" align="right">32</TD>
+            <TD bgcolor="#ffffff">64</TD>
+            <TD align="right" bgcolor="#ffffff">16</TD>
+            <TD align="right" bgcolor="#ffffff">24</TD>
+            <TD align="right" bgcolor="#ffffff">40</TD>
+            <TD align="right" bgcolor="#ffffff"><FONT color="#cc0000">-24</FONT></TD>
+          </TR>
+          <TR>
+            <TD align="center" bgcolor="#ffffff">３<FONT size="-1">回</FONT></TD>
+            <TD align="center" bgcolor="#ffffff">８</TD>
+            <TD align="right" bgcolor="#ffffff">24</TD>
+            <TD bgcolor="#ffffff" align="right">32</TD>
+            <TD bgcolor="#ffffff">96</TD>
+            <TD align="right" bgcolor="#ffffff">24</TD>
+            <TD align="right" bgcolor="#ffffff">24</TD>
+            <TD align="right" bgcolor="#ffffff">48</TD>
+            <TD align="right" bgcolor="#ffffff"><FONT color="#cc0000">-48</FONT></TD>
+          </TR>
+          <TR>
+            <TD align="center" bgcolor="#ffffff">４<FONT size="-1">回</FONT></TD>
+            <TD align="center" bgcolor="#ffffff">８</TD>
+            <TD align="right" bgcolor="#ffffff">24</TD>
+            <TD bgcolor="#ffffff" align="right">32</TD>
+            <TD bgcolor="#ffffff">128</TD>
+            <TD align="right" bgcolor="#ffffff">32</TD>
+            <TD align="right" bgcolor="#ffffff">24</TD>
+            <TD align="right" bgcolor="#ffffff">56</TD>
+            <TD align="right" bgcolor="#ffffff"><FONT color="#cc0000">-72</FONT></TD>
+          </TR>
+          <TR>
+            <TD align="center" bgcolor="#ffffff">５<FONT size="-1">回</FONT></TD>
+            <TD align="center" bgcolor="#ffffff">８</TD>
+            <TD align="right" bgcolor="#ffffff">24</TD>
+            <TD bgcolor="#ffffff" align="right">32</TD>
+            <TD bgcolor="#ffffff">160</TD>
+            <TD align="right" bgcolor="#ffffff">40</TD>
+            <TD align="right" bgcolor="#ffffff">24</TD>
+            <TD align="right" bgcolor="#ffffff">64</TD>
+            <TD align="right" bgcolor="#ffffff"><FONT color="#cc0000">-96</FONT></TD>
+          </TR>
+          <TR>
+            <TD align="center" bgcolor="#ffffff">６<FONT size="-1">回</FONT></TD>
+            <TD align="center" bgcolor="#ffffff">８</TD>
+            <TD align="right" bgcolor="#ffffff">24</TD>
+            <TD bgcolor="#ffffff" align="right">32</TD>
+            <TD bgcolor="#ffffff">192</TD>
+            <TD align="right" bgcolor="#ffffff">48</TD>
+            <TD align="right" bgcolor="#ffffff">24</TD>
+            <TD align="right" bgcolor="#ffffff">72</TD>
+            <TD align="right" bgcolor="#ffffff"><FONT color="#cc0000">-120</FONT></TD>
+          </TR>
+          <TR>
+            <TD align="center" bgcolor="#ffffff">７<FONT size="-1">回</FONT></TD>
+            <TD align="center" bgcolor="#ffffff">８</TD>
+            <TD align="right" bgcolor="#ffffff">24</TD>
+            <TD bgcolor="#ffffff" align="right">32</TD>
+            <TD bgcolor="#ffffff">224</TD>
+            <TD align="right" bgcolor="#ffffff">56</TD>
+            <TD align="right" bgcolor="#ffffff">24</TD>
+            <TD align="right" bgcolor="#ffffff">80</TD>
+            <TD align="right" bgcolor="#ffffff"><FONT color="#cc0000">-144</FONT></TD>
+          </TR>
+          <TR>
+            <TD align="center" bgcolor="#ffffff">８<FONT size="-1">回</FONT></TD>
+            <TD align="center" bgcolor="#ffffff">８</TD>
+            <TD align="right" bgcolor="#ffffff">24</TD>
+            <TD bgcolor="#ffffff" align="right">32</TD>
+            <TD bgcolor="#ffffff">256</TD>
+            <TD align="right" bgcolor="#ffffff">64</TD>
+            <TD align="right" bgcolor="#ffffff">24</TD>
+            <TD align="right" bgcolor="#ffffff">88</TD>
+            <TD align="right" bgcolor="#ffffff"><FONT color="#cc0000">-168</FONT></TD>
+          </TR>
+        </TBODY>
+      </TABLE>
+      </BLOCKQUOTE>
+      　表の通り、最低点の８点を４連続ロンアガリした場合の得点合計は<FONT color="#0000cc">128</FONT>点。８点の４倍、32点の手をロンアガリした場合は<FONT color="#0000cc">56</FONT>得点なので<FONT color="#cc0000">72</FONT>点の損（？）。８連続に至っては、なんと<FONT color="#cc0000">168</FONT>点の損(笑) 。 すなわち中麻では、役をいくら重ねても 得点インパクトは大したことはない。そこで公式中麻では、一度に たくさんの役を重ねる努力をするより
+      最低の<FONT color="#ff0000">８</FONT>点の手でも繰り返し和了した方がはるかに効率が良いことになる。そんな状況を一覧表にすると こんな感じ（）。</BLOCKQUOTE>
+      <BLOCKQUOTE>　公式中麻は一般日麻と異なり、同じアガリ手でも ツモアガリすると和了点を他プレーヤー３人から取得する。そこで同じアガリ手でも、ロンアガリした場合とツモアガリした場合とでは、アガリ点が大きく異なってくる。たとえば最低の８点アガリでも、ロンアガリした場合は<FONT color="#cc0000">32</FONT>点であるが、ツモアガリした場合は<FONT color="#cc0000">48</FONT>点となる（<FONT color="#cc0000">24</FONT><FONT color="#0000cc" size="-1">（BCD支払い和了点）</FONT><FONT color="#000000" size="+1">＋</FONT><FONT color="#cc0000">23</FONT><FONT color="#0000cc" size="-1">（ＢCD支払い底点）</FONT><FONT size="+1">=</FONT><FONT color="#cc0000">48</FONT>点）。これは８点の手を３つ重ねた24点の手をロンアガリした得点とまったく同じ。しかし計算のベースが同じなので、連続アガリと倍数手を一度に和了したときの得点差はロンアガリの場合とまったく同じとなる。</BLOCKQUOTE>
+      <BLOCKQUOTE>
+      <BLOCKQUOTE>
+      <TABLE border="1" bgcolor="#cccccc">
+        <TBODY>
+          <TR>
+            <TD colspan="9" align="center" bgcolor="#ffffff">公式中麻</TD>
+            <TD align="center" bgcolor="#ddddff" rowspan="11">・</TD>
+            <TD align="center" bgcolor="#ffffff" rowspan="2">＊</TD>
+          </TR>
+          <TR>
+            <TD colspan="5" align="center" bgcolor="#ffffff"><FONT size="-1">８点手を連続ツモアガリした場合</FONT></TD>
+            <TD align="center" bgcolor="#ffffff" rowspan="10">・</TD>
+            <TD align="center" bgcolor="#ffffff" colspan="3"><FONT size="-1">８点の倍数手を<BR>
+            ツモアガリした場合</FONT></TD>
+          </TR>
+          <TR>
+            <TD bgcolor="#ffffff"><FONT size="-1">連続回数</FONT></TD>
+            <TD bgcolor="#ffffff"><FONT size="-1">和了点</FONT></TD>
+            <TD bgcolor="#ffffff"><FONT size="-1">底点</FONT></TD>
+            <TD bgcolor="#ffffff"><FONT size="-1">得点</FONT></TD>
+            <TD bgcolor="#ffffff"><FONT size="-1">得点<BR>
+            合計</FONT></TD>
+            <TD bgcolor="#ffffff" align="center"><FONT size="-1">和了点</FONT></TD>
+            <TD bgcolor="#ffffff" align="center"><FONT size="-1">底点</FONT></TD>
+            <TD bgcolor="#ffffff" align="center"><FONT size="-1">得点</FONT></TD>
+            <TD bgcolor="#ffffff"><FONT size="-1">両者の<BR>
+            得点差</FONT></TD>
+          </TR>
+          <TR>
+            <TD align="center" bgcolor="#ffffff">１</TD>
+            <TD align="center" bgcolor="#ffffff">24</TD>
+            <TD align="right" bgcolor="#ffffff">24</TD>
+            <TD bgcolor="#ffffff" align="right">48</TD>
+            <TD bgcolor="#ffffff">48</TD>
+            <TD align="right" bgcolor="#ffffff">24</TD>
+            <TD align="right" bgcolor="#ffffff">24</TD>
+            <TD align="right" bgcolor="#ffffff">48</TD>
+            <TD align="center" bgcolor="#ffffff"><FONT size="-1">ナシ</FONT></TD>
+          </TR>
+          <TR>
+            <TD align="center" bgcolor="#ffffff">２</TD>
+            <TD align="center" bgcolor="#ffffff">24</TD>
+            <TD align="right" bgcolor="#ffffff">24</TD>
+            <TD bgcolor="#ffffff" align="right">48</TD>
+            <TD bgcolor="#ffffff">96</TD>
+            <TD align="right" bgcolor="#ffffff">48</TD>
+            <TD align="right" bgcolor="#ffffff">24</TD>
+            <TD align="right" bgcolor="#ffffff">72</TD>
+            <TD align="right" bgcolor="#ffffff"><FONT color="#cc0000">-24</FONT></TD>
+          </TR>
+          <TR>
+            <TD align="center" bgcolor="#ffffff">３</TD>
+            <TD align="center" bgcolor="#ffffff">24</TD>
+            <TD align="right" bgcolor="#ffffff">24</TD>
+            <TD bgcolor="#ffffff" align="right">48</TD>
+            <TD bgcolor="#ffffff">144</TD>
+            <TD align="right" bgcolor="#ffffff">72</TD>
+            <TD align="right" bgcolor="#ffffff">24</TD>
+            <TD align="right" bgcolor="#ffffff">96</TD>
+            <TD align="right" bgcolor="#ffffff"><FONT color="#cc0000">-48</FONT></TD>
+          </TR>
+          <TR>
+            <TD align="center" bgcolor="#ffffff">４</TD>
+            <TD align="center" bgcolor="#ffffff">24</TD>
+            <TD align="right" bgcolor="#ffffff">24</TD>
+            <TD bgcolor="#ffffff" align="right">48</TD>
+            <TD bgcolor="#ffffff">192</TD>
+            <TD align="right" bgcolor="#ffffff">96</TD>
+            <TD align="right" bgcolor="#ffffff">24</TD>
+            <TD align="right" bgcolor="#ffffff">120</TD>
+            <TD align="right" bgcolor="#ffffff"><FONT color="#cc0000">-72</FONT></TD>
+          </TR>
+          <TR>
+            <TD align="center" bgcolor="#ffffff">５</TD>
+            <TD align="center" bgcolor="#ffffff">24</TD>
+            <TD align="right" bgcolor="#ffffff">24</TD>
+            <TD bgcolor="#ffffff" align="right">48</TD>
+            <TD bgcolor="#ffffff">240</TD>
+            <TD align="right" bgcolor="#ffffff">120</TD>
+            <TD align="right" bgcolor="#ffffff">24</TD>
+            <TD align="right" bgcolor="#ffffff">144</TD>
+            <TD align="right" bgcolor="#ffffff"><FONT color="#cc0000">-96</FONT></TD>
+          </TR>
+          <TR>
+            <TD align="center" bgcolor="#ffffff">６</TD>
+            <TD align="center" bgcolor="#ffffff">24</TD>
+            <TD align="right" bgcolor="#ffffff">24</TD>
+            <TD bgcolor="#ffffff" align="right">48</TD>
+            <TD bgcolor="#ffffff">288</TD>
+            <TD align="right" bgcolor="#ffffff">144</TD>
+            <TD align="right" bgcolor="#ffffff">24</TD>
+            <TD align="right" bgcolor="#ffffff">168</TD>
+            <TD align="right" bgcolor="#ffffff"><FONT color="#cc0000">-120</FONT></TD>
+          </TR>
+          <TR>
+            <TD align="center" bgcolor="#ffffff">７</TD>
+            <TD align="center" bgcolor="#ffffff">24</TD>
+            <TD align="right" bgcolor="#ffffff">24</TD>
+            <TD bgcolor="#ffffff" align="right">48</TD>
+            <TD bgcolor="#ffffff">336</TD>
+            <TD align="right" bgcolor="#ffffff">168</TD>
+            <TD align="right" bgcolor="#ffffff">24</TD>
+            <TD align="right" bgcolor="#ffffff">192</TD>
+            <TD align="right" bgcolor="#ffffff"><FONT color="#cc0000">-144</FONT></TD>
+          </TR>
+          <TR>
+            <TD align="center" bgcolor="#ffffff">８</TD>
+            <TD align="center" bgcolor="#ffffff">24</TD>
+            <TD align="right" bgcolor="#ffffff">24</TD>
+            <TD bgcolor="#ffffff" align="right">48</TD>
+            <TD bgcolor="#ffffff">384</TD>
+            <TD align="right" bgcolor="#ffffff">192</TD>
+            <TD align="right" bgcolor="#ffffff">24</TD>
+            <TD align="right" bgcolor="#ffffff">216</TD>
+            <TD align="right" bgcolor="#ffffff"><FONT color="#cc0000">-168</FONT></TD>
+          </TR>
+        </TBODY>
+      </TABLE>
+      </BLOCKQUOTE>
+      　さらに中麻は日麻と異なり、門前アガリのインパクトが非常に小さい<FONT size="-1">（門前ロンは加点ナシ）</FONT>。もちろん門ツモアガリなら加４点（<FONT color="#000099" size="+1"><FONT size="+1"><FONT size="+1"><SMALL>不求人</SMALL></FONT></FONT></FONT><FONT color="#000099"><FONT size="+0"><FONT size="-1"><SMALL>(プーチューレン）</SMALL></FONT></FONT></FONT>）となるが、ツモアガリは保証されたものではない。そこで中麻では門前よりアガリというので、早い段階からチーポンがなされることが多い。それが最低の<FONT color="#ff0000">８</FONT>点アガリでも、ツモアガリなら８点オーライで３倍増（24点）。<FONT color="#0000cc">一翻あったら米のメシ</FONT>どころか、<FONT color="#ff0000">ツモ上がったら満漢全席</FONT> (笑) 。</BLOCKQUOTE>
+      <BLOCKQUOTE>　では我が純麻雀ではどうか。ぐだぐだ云う」より、先に表(笑)<FONT color="#000099" size="-1">※純麻雀では</FONT><FONT color="#cc0000" size="-1">縛り</FONT><FONT color="#000099" size="-1">が無い。そこで得点は０翻アガリから始まる。しかし一般日麻や公式中麻とのアガリ点比較の関係で、一翻アガリから表示。</FONT></BLOCKQUOTE>
+      <BLOCKQUOTE>
+      <BLOCKQUOTE>
+      <TABLE border="1" bgcolor="#cccccc">
+        <TBODY>
+          <TR>
+            <TD align="center" bgcolor="#ffffff" colspan="6">純麻雀<FONT size="-1"><BR>
+            </FONT></TD>
+            <TD align="center" bgcolor="#e1e1ff" rowspan="10"><FONT size="-1">・</FONT></TD>
+            <TD align="center" bgcolor="#ffffff">＊</TD>
+          </TR>
+          <TR>
+            <TD align="center" bgcolor="#ffffff"><FONT size="-1">一翻アガリ<BR>
+            連続回数</FONT></TD>
+            <TD align="center" bgcolor="#ffffff"><FONT size="-1">得点</FONT></TD>
+            <TD align="center" bgcolor="#ffffff"><FONT size="-1">得点計</FONT></TD>
+            <TD bgcolor="#ffffff" rowspan="9">・</TD>
+            <TD align="center" bgcolor="#ffffff"><FONT size="-1">和了翻数</FONT></TD>
+            <TD align="center" bgcolor="#ffffff"><FONT size="-1">得点</FONT></TD>
+            <TD align="center" bgcolor="#ffffff"><FONT size="-1">両者の</FONT><BR>
+            <FONT size="-1">得点差</FONT></TD>
+          </TR>
+          <TR>
+            <TD align="center" bgcolor="#ffffff">１</TD>
+            <TD bgcolor="#ffffff">1,500</TD>
+            <TD align="center" bgcolor="#ffffff">−</TD>
+            <TD bgcolor="#ffffff" align="center">一翻</TD>
+            <TD align="right" bgcolor="#ffffff">1,500</TD>
+            <TD align="center" bgcolor="#ffffff"><FONT size="-1">ナシ</FONT></TD>
+          </TR>
+          <TR>
+            <TD align="center" bgcolor="#ffffff">２</TD>
+            <TD bgcolor="#ffffff">1,500</TD>
+            <TD align="right" bgcolor="#ffffff">3,000</TD>
+            <TD bgcolor="#ffffff" align="center">二翻</TD>
+            <TD align="right" bgcolor="#ffffff">3,000</TD>
+            <TD align="center" bgcolor="#ffffff"><FONT size="-1">ナシ</FONT></TD>
+          </TR>
+          <TR>
+            <TD align="center" bgcolor="#ffffff">３</TD>
+            <TD bgcolor="#ffffff">1,500</TD>
+            <TD align="right" bgcolor="#ffffff">4,500</TD>
+            <TD bgcolor="#ffffff" align="center">三翻</TD>
+            <TD align="right" bgcolor="#ffffff">6,000</TD>
+            <TD align="right" bgcolor="#ffffff">＋<FONT color="#0000cc">1,500</FONT></TD>
+          </TR>
+          <TR>
+            <TD align="center" bgcolor="#ffffff">４</TD>
+            <TD bgcolor="#ffffff">1,500</TD>
+            <TD align="right" bgcolor="#ffffff">6,000</TD>
+            <TD bgcolor="#ffffff" align="center">四翻</TD>
+            <TD bgcolor="#ffffff">　9,000</TD>
+            <TD align="right" bgcolor="#ffffff"><FONT color="#0000cc">＋3,000</FONT></TD>
+          </TR>
+          <TR>
+            <TD align="center" bgcolor="#ffffff">５</TD>
+            <TD bgcolor="#ffffff">1,500</TD>
+            <TD align="right" bgcolor="#ffffff">7,500</TD>
+            <TD bgcolor="#ffffff" align="center">五翻</TD>
+            <TD align="center" bgcolor="#ffffff"><FONT size="-1">12,000</FONT></TD>
+            <TD align="right" bgcolor="#ffffff"><FONT color="#0000cc">＋4,500</FONT></TD>
+          </TR>
+          <TR>
+            <TD align="center" bgcolor="#ffffff">６</TD>
+            <TD bgcolor="#ffffff">1,500</TD>
+            <TD align="right" bgcolor="#ffffff">9,000</TD>
+            <TD bgcolor="#ffffff" align="center">六翻</TD>
+            <TD bgcolor="#ffffff">15.000</TD>
+            <TD align="right" bgcolor="#ffffff"><FONT color="#0000cc">＋6,000</FONT></TD>
+          </TR>
+          <TR>
+            <TD align="center" bgcolor="#ffffff">７</TD>
+            <TD bgcolor="#ffffff">1,500</TD>
+            <TD bgcolor="#ffffff" align="right">10,500</TD>
+            <TD bgcolor="#ffffff" align="center">七翻</TD>
+            <TD align="center" bgcolor="#ffffff">18,000</TD>
+            <TD align="right" bgcolor="#ffffff"><FONT color="#0000cc">＋7,500</FONT></TD>
+          </TR>
+          <TR>
+            <TD align="center" bgcolor="#ffffff">８</TD>
+            <TD bgcolor="#ffffff">1,500</TD>
+            <TD bgcolor="#ffffff" align="right">12,000</TD>
+            <TD bgcolor="#ffffff" align="center">八翻</TD>
+            <TD bgcolor="#ffffff">21,000</TD>
+            <TD bgcolor="#ffffff"><FONT color="#0000cc">＋9,000</FONT></TD>
+          </TR>
+        </TBODY>
+      </TABLE>
+      <FONT color="#000099" size="-1">※<FONT color="#000099">積み棒とか両縛、八連荘など、番外要素は最初から無い。</FONT></FONT></BLOCKQUOTE>
+      </BLOCKQUOTE>
+      <BLOCKQUOTE>　純麻雀に場ゾロは無い。また一翻は一翻なので、ロンアガリでもツモアガリでも翻数が同じなら得点に変わりはない<FONT size="-1">（符計算が無いので、ロンアガリ ツモアガリにおける誤差もない）</FONT>。そして一般日麻のように得点は倍々計算ではなく、常に <FONT color="#0000cc">アガリ翻数-１＊３＝得点</FONT><FONT size="-1">（アガリ翻数から１を減じるのは、０翻アガリがあるため）</FONT>という計算。当然 1一翻手の連続アガリより、その翻数を１回で和了した方が はるかにメリットがでる。</BLOCKQUOTE>
+      <BLOCKQUOTE>　さらに「四翻以上は<FONT color="#cc0000">両翻刻み</FONT>」というブレーキもない。そこで四翻アガリより五翻アガリ、六翻アガリより六翻アガリというように、必ず得点は大きくなる。またその増加点は倍増、あるいは５割増ではなく、定数的に増加する。たとえば四翻で和了した場合、得点は9000点だが 五翻では12000点で3,000点の増加。アガリが六翻であれば、四翻のときより6,000点増加する。おお、なんと素晴らしい得点ッステム！<FONT color="#000099" size="-1">（世の中ではこれを我田引水、自画自賛という(笑)）</FONT></BLOCKQUOTE>
+      <BLOCKQUOTE>　そして純麻雀には一翻縛りという制約が無い and いかにトップを取るかという麻雀。そこで公式中麻とは違った意味で<FONT size="-1">（トップ目が早アガリを目指すため）</FONT>、ラス場に近くなると上家の第１打牌からの両門チーはもとより、オタ風ポンなどが結構発生する。五味氏が純麻雀をプレーしたら、「<FONT color="#0000cc">こんなの麻雀じゃねぇ</FONT>」と云って席を立つかも。(^-^；</BLOCKQUOTE>
+      <BLOCKQUOTE><BR>
+      </BLOCKQUOTE>
+      </TD>
+    </TR>
+  </TBODY>
+</TABLE>
+</BLOCKQUOTE>
+</BLOCKQUOTE>
+<BLOCKQUOTE>
+<BLOCKQUOTE>
+<BLOCKQUOTE>
+<BLOCKQUOTE>
+<BLOCKQUOTE>
+<BLOCKQUOTE><A href="labo48.html">以前へ</A>　　<A href="labo50.html">以降へ</A>　　<A href="LABORATORY.html">目次へ</A></BLOCKQUOTE>
+</BLOCKQUOTE>
+</BLOCKQUOTE>
+</BLOCKQUOTE>
+</BLOCKQUOTE>
+</BLOCKQUOTE>
+</BODY>
+</HTML>

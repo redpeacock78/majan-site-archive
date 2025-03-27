@@ -1,0 +1,99 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+<meta http-equiv="Content-Type" content="text/html; charset=Shift_JIS">
+<meta name="GENERATOR" content="JustSystems Homepage Builder Version 17.0.7.0 for Windows">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<TITLE>端数切り上げ</TITLE>
+</HEAD>
+<BODY bgcolor="#bbffbb" vlink="#cc0000" alink="#ffff00">
+<BLOCKQUOTE>
+<BLOCKQUOTE>
+<TABLE border="1" bgcolor="#000000">
+  <TBODY>
+    <TR>
+      <TD><FONT size="+2" color="#ffff00"><I>　</I></FONT><FONT size="+1" color="#ffff00"><I>Rule</I></FONT><FONT size="-1"><B><FONT size="+1" color="#ffff00"><I></I></FONT></B></FONT><B><FONT size="+2" color="#ffff00"><I>　</I></FONT></B><FONT size="+1" color="#ffff00">規則</FONT><B><FONT size="+2" color="#000000"><FONT size="+2" color="#000000"><I>。</I></FONT></FONT></B></TD>
+    </TR>
+  </TBODY>
+</TABLE>
+</BLOCKQUOTE>
+</BLOCKQUOTE>
+<BLOCKQUOTE>
+<BLOCKQUOTE>
+<table border="1" bgcolor="#cccccc">
+  <TBODY>
+    <TR>
+      <TD bgcolor="#8080ff" align="left"><FONT size="-1" color="#ffffff"><FONT size="+1"><BR>
+      　　　　（３８）端数切り上げ<BR>
+      <BR>
+      </FONT></FONT></TD>
+    </TR>
+    <TR>
+      <TD bgcolor="#ffffce">
+      <BLOCKQUOTE><BR>
+      　今回は少しマニアックな話。<BR>
+      　日本の一般麻雀の得点は、端数切り上げ処理をして算出する。計算の仕組みは周知のことと思うけど、<br>
+      話の都合があるので最初から書く。ウザイと思われる方は、下の説明は読み飛ばし可。（^-^；<BR>
+      <BR>
+      　たとえば、南家が次のような手をツモアガリしたとする。<BR>
+      <BR>
+      <IMG height="24" alt="二筒" src="pin2.gif" width="18"><IMG height="24" alt="二筒" src="pin2.gif" width="18"><IMG height="24" alt="三萬" src="man3.gif" width="18"><IMG height="24" alt="四萬" src="man4.gif" width="18"><IMG height="24" alt="五萬" src="man5.gif" width="18"><IMG height="24" alt="六萬" src="man6.gif" width="18"><IMG height="24" alt="七萬" src="man7.gif" width="18"><IMG height="24" alt="八萬" src="man8.gif" width="18"><IMG height="24" alt="六索" src="sou6.gif" width="18"><IMG height="24" alt="七索" src="sou7.gif" width="18">　　ポン<IMG height="24" alt="四筒" src="pin4.gif" width="18"><IMG height="18" alt="四筒" src="pin4-.gif" width="24"><IMG height="24" alt="四筒" src="pin4.gif" width="18">　ツモ<IMG height="24" alt="八索" src="sou8.gif" width="18"><BR><BR>
+      　基本点は 20(符底)＋２(<IMG height="16" alt="四筒" src="s2pin4.gif" width="12" border="1"> ポン)＋２(ツモ）＝24符である。この時点で<FONT color="#0000cc">30符に切り上げ</FONT>る。アガリ役はタンヤオ<br>
+      の一翻＋場ゾロ（二翻）＝三翻なので、30符を３回倍々計算する。すると<font color="#cc0000">240点</font>となる。この時点で<FONT color="#0000cc">300点に切り<br>
+      上げ</FONT>る。これが西家と北家の支払い額。<BR>
+      <BR>
+      　東家は散家の倍額を支払うが、300点×2=600点ではない。<font color="#0000cc">300点</font>をまた<font color="#cc0000">240点</font>に戻してから、倍額にする。<br>
+      すると<font color="#cc0000">480点</font>となる。これを<FONT color="#0000cc">500点に切り上げ</FONT>る。これが東家の支払額。すると南家の得点は結果的に<FONT color="#cc0000">1100</FONT>点<br>
+      となる。<BR>
+      <BR>
+      　一般麻雀の場合、これがツモアガリの最低得点。百点棒の支払い本数から、俗に<FONT color="#990000">３本５本（さんぼんごほん）<br>
+      </FONT>と呼ばれている。基本点段階で１回、倍々計算したあとで１回、計２回の切り上げを行うので、<FONT color="#0000cc">ダブル切り上げ<br>
+      </FONT>とか<FONT color="#0000cc">ダブルアップ</FONT>と呼ばれている。またこの計算法では30符六翻のアガリは子で7680点、切り上げて7700点に<br>
+      なる（親の場合は11600点）。しかし一般麻雀の場合、30符六翻については この時点で３回目の切り上げを行い、<br>
+      7680点を8000点、11600点は12000点とすることも多い。この場合はトリプル切り上げ、またはトリプルアップと呼<br>
+      ぶ。と講釈を垂れまくったところで、ようやく本題 (^0^；<br>
+      <BR>
+      　現在<FONT color="#cc0000">二十二麻雀（アルシーアルマージャン）</FONT>と呼ばれる古典麻雀では、こんな端数切り上げ計算はしなかった。22符<br>
+      は22符、24符は24符としてきっちり計算した。そこでこれは<FONT color="#cc0000">精算法</FONT>と呼ばれた。昭和４年、日本麻雀連盟（以下、<br>
+      日雀連と）が結成されたとき、とうぜん<FONT color="#cc0000">精算法</FONT>で計算されていた。<BR>
+      <BR>
+      　どんな計算法でも慣れてしまえば同じだが、慣れるまでが一苦労。そこで昭和７年、試験的に四捨六入法が<br>
+      導入され、翌昭和８年から正式採用となった。以来、日雀連は、ずっとこの方式で行われていた。<BR>
+      <BR>
+      二十二麻雀に<FONT color="#cc0000">一翻縛り</FONT>はない。そこで下記のような役ナシの手でもツモアガリＯＫとなる。<BR>
+      <BR>
+      　　　<IMG height="24" alt="一筒" src="pin1.gif" width="18"><IMG height="24" alt="一筒" src="pin1.gif" width="18"><IMG height="24" alt="三萬" src="man3.gif" width="18"><IMG height="24" alt="四萬" src="man4.gif" width="18"><IMG height="24" alt="五萬" src="man5.gif" width="18"><IMG height="24" alt="六萬" src="man6.gif" width="18"><IMG height="24" alt="七萬" src="man7.gif" width="18"><IMG height="24" alt="八萬" src="man8.gif" width="18"><IMG height="24" alt="六索" src="sou6.gif" width="18"><IMG height="24" alt="七索" src="sou7.gif" width="18">　　ポン<IMG height="24" alt="四筒" src="pin4.gif" width="18"><IMG height="18" alt="四筒" src="pin4-.gif" width="24"><IMG height="24" alt="四筒" src="pin4.gif" width="18">　ツモ<IMG height="24" alt="八索" src="sou8.gif" width="18"><BR>
+      <BR>
+      　基本点は20（符底)＋２(<IMG height="16" alt="四筒" src="s2pin4.gif" width="12" border="1"> ポン)＋２(ツモ）＝24符。役ナシなので倍々計算もナシ、この24点が直接 得点計算に<br>
+      直結する。四捨六入法なので、まず４符は切り捨てとなる。残るは符底の20点。そこでアガったのが散家（子）で<br>
+      あれば他の散家から20点づつ、東家からその倍額の40点、合計80点の得点となる。これが二十二麻雀の最低<br>
+      得点。点棒の支払い本数から俗に<FONT color="#990000">２４</FONT><FONT color="#990000" size="-1">（にしん）</FONT>と通称されていた。<BR>
+      <BR>
+      　2004年、そんな二十二麻雀の世界に80年振りの大変動が。なんと最初の段階における符計算が<FONT color="#cc0000">四捨六入法</FONT><br>
+      から<FONT color="#0000cc">端数切り上げ法</FONT>に変わったのだ。<BR>
+      <BR>
+      　上記の手で云うと、基本点は24符（20(符底)＋２(<IMG height="16" alt="四筒" src="s2pin4.gif" width="12" border="1">ポン)＋２(ツモ)）。この４符を切りあげて30符。子１人の支払<br>
+      いが30点、親が60点支払うので合計は<FONT color="#cc0000">120点</FONT>となる。これが改正後の二十二麻雀の最低得点（<FONT size="-1">通称は</FONT><FONT color="#cc0000" size="-1">３６（さぶろく）</FONT><FONT size="-1"><br>
+      なのか）。</FONT><BR><BR>
+      　しかし役があって倍々計算した場合でも、そこでの端数は切り上げしない。いや、“<FONT color="#cc0000">しない</FONT>”というより、する理由<br>
+      がない。つまり最初の段階で１回しか切り上げを行わないので、<FONT color="#0000cc">シングルアップ</FONT>ということになる。いずれにせよ、<br>
+      この改革によって点数計算はグンとシンプルになった。<BR>
+      <BR>
+      　単にシンプルになっただけでなく、ゲームでの影響もかなり大きい。たとえば<FONT color="#0000cc">ピンフ</FONT>アガリの場合、これまでは<br>
+      門前のロンアガリで<FONT color="#cc0000">240点</FONT>、ツモアガリで<FONT color="#cc0000">160点</FONT>であった（散家）。要はピンフ手をツモアガリすると、得点が低くなっ<br>
+      ていた。それがこの改訂の結果、両者とも<FONT color="#cc0000">240点</FONT>となった。<BR>
+      <BR>
+      　また<FONT color="#0000cc">食いピンフ</FONT>となると、これまではロンアガリで<FONT color="#cc0000">160点</FONT>、ツモアガリで<FONT color="#cc0000">80点</FONT>と ダブルスコアの差が生じていた。<br>
+      それがこの改訂でロンして<FONT color="#cc0000">160点</FONT>、ツモって<FONT color="#cc0000">120点</FONT>となり、状況がずいぶんと改善された。イヤ、実に結構な改<br>
+      革かと。＃<FONT color="#0000cc">食いピンフ</FONT>の場合でも両者同額（<FONT color="#cc0000">160点</FONT>）になる名案があるんだけど、採用してくれないだろうなぁ....<BR>
+      <BR>
+      </BLOCKQUOTE>
+      </TD>
+    </TR>
+  </TBODY>
+</table>
+</BLOCKQUOTE>
+</BLOCKQUOTE>
+<P align="center"><A href="rule37.html">以前へ</A>　　<A href="rule39.html">以降へ</A>　　<A href="RULE.html">目次へ</A></P>
+</BODY>
+</HTML>

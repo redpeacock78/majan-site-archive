@@ -1,0 +1,110 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=Shift_JIS">
+<META name="GENERATOR" content="IBM HomePage Builder 2001 V5.0.3 for Windows">
+<META http-equiv="Content-Style-Type" content="text/css">
+<TITLE>天和の確率</TITLE>
+</HEAD>
+<BODY bgcolor="#d0ffd0" vlink="#990000" alink="#ffff00">
+<BLOCKQUOTE>
+<BLOCKQUOTE>
+<TABLE border="1" bgcolor="#000000">
+  <TBODY>
+    <TR>
+      <TD><FONT size="+2" color="#ffff00"><FONT size="-2"><FONT face="Lucida Sans" size="+2" color="#ffff00"><I><FONT size="+3"><FONT color="#ffff00" size="-1"><FONT size="+1">　Ｐersonal</FONT><FONT size="+2"> </FONT></FONT></FONT></I></FONT></FONT></FONT><FONT size="+3" color="#ffff00"><FONT size="-1"><FONT face="Lucida Sans" size="+3" color="#ffff00"><I><FONT size="+4"><FONT color="#ffff00" size="+0"><FONT size="+3"><FONT color="#ffff00" size="+0">analyze</FONT></FONT></FONT></FONT></I></FONT></FONT></FONT><FONT size="+2" color="#ffff00"><FONT face="Lucida Sans" color="#cc00cc" size="-1"><FONT size="+3"><FONT color="#cc00cc" size="-1"><FONT size="+1" color="#ffff00">　諸分析　.</FONT></FONT></FONT></FONT></FONT></TD>
+    </TR>
+  </TBODY>
+</TABLE>
+</BLOCKQUOTE>
+</BLOCKQUOTE>
+<BLOCKQUOTE>
+<BLOCKQUOTE>
+<TABLE border="1" bgcolor="#cccc00">
+  <TBODY>
+    <TR>
+      <TD bgcolor="#8080ff"><FONT size="+1" color="#ffffff"><BR>
+      　　　　（1５）天和の確率<BR>
+      <BR>
+      </FONT></TD>
+    </TR>
+    <TR>
+      <TD bgcolor="#ffffd7">
+      <BLOCKQUOTE><BR>
+      　前提<BR>
+      　天和というのは、来た配牌がアガっているかどうかがわかるという最低限の麻雀の技量さえあれば、アガる事が可能です。また、配牌のみですべてが決定するので、いわゆる「麻雀の腕」とも無縁の存在である。したがって、その発生確率は、数学的組み合わせのみで、求めることが可能と考えられる。<BR>
+      　　　<BR>
+      　その発生確率Ｐは0.000002998(約33万分の1)とされており、今回はこれを既知のものとして扱う。<BR>
+      <BR>
+      <FONT color="#cc0000">問題（１）</FONT><BR>
+      ＲＴ麻雀公式戦は今期で第20期を迎えるが、通算で約４万半荘
+      (1半荘12局)と推定すると局数で換算して48万局)行われている。しかし、この48万局という回数の配牌をもってしても、いまだ天和の発生は確認されていない。このようなことは、統計学的に十分ありうるか。ポアソン分布による比率の検定で解け。ただし有意水準は５％とする。<BR>
+      ※天和の確率＝0.000003　(約33万分の1)　として既知とする。<BR>
+      　　 <BR>
+      <FONT color="#cc00cc">回答</FONT><BR>
+      　発生確率が極端に小さく、データ数も大きいので、発生数
+      ｒ はポアソン分布に従うものとして、確率を計算する。<BR>
+      <BR>
+      期待値ｍは、(ｎ：局数、　ｐ：天和の確率)<BR>
+      ｍ＝ｎｐ＝480000×0.000003＝1.44<BR>
+      　　　　<BR>
+      期待値ｍに対するポアソン確率は、<BR>
+      <BR>
+      　　　　　　　　　ｒ e^(-ｍ)*ｍ^(ｘ)<BR>
+      Ｐ(ｘ≦ｒ)＝Σ----------------<BR>
+      　　　　　　　　　　ｘ＝0 ｘ!<BR>
+      　　　　　<BR>
+      ただし e は自然対数の底(2.71828・・・・)であり、「
+      ! 」は、階乗の記号。<BR>
+      　　ｘ!=ｘ*(ｘ-1)*・・・・*1<BR>
+      「^」は、累乗の記号のつもりです。<BR>
+      　　　<BR>
+      したがって、<BR>
+      　　　　　　　　　　　　　　 e^(-ｍ)*ｍ^(0)<BR>
+      求める確率＝Ｐ(ｒ＝0)＝---------------＝e^(-ｍ)<BR>
+      　　　　 　　　　　　　　　　　0!<BR>
+      <BR>
+      　　　　　 ＝e^(-1.44)＝1/4.2207＝0.237＞0.05<BR>
+      <BR>
+      　４８万局の回数の配牌で、一回も天和が出現しない確率が、0.237と計算され、この確率が有意水準の0.05を大きく上回っている。すなわち、４８万局の回数の配牌で一回も天和が出現しなくても、何ら不思議ではないと言える。<BR>
+      ---------------------------------------------------------------<BR>
+      <BR>
+      <FONT color="#cc0000">問題（２）<BR>
+      </FONT>では逆に、何十万局やって１回も天和が発生しなかった場合に、ＲＴ麻雀プログラムにおける天和発生率が有意に低く押さえられているといえるのか。その局数を求めよ。有意水準は５％とする。<BR>
+      <BR>
+      <FONT color="#cc00cc">問題（２）回答</FONT><BR>
+      問題（１）で計算した確率が、ちょうど0.05になる局数を逆算で求めればよい。<BR>
+      　　　<BR>
+      　Ｐ(ｒ＝0)＝e^(-ｍ)＝0.05<BR>
+      　　　<BR>
+      　この方程式を解く。<BR>
+      　　　<BR>
+      　e^(ｍ)＝20　<BR>
+      　ｍ＝log20=2.9957　(対数の底はe)<BR>
+      　　　　　<BR>
+      　すると、<BR>
+      　　　<BR>
+      ｍ＝ｎｐ＝ｎ*0.000003＝2.9957　であるから、<BR>
+      <BR>
+      ∴ｎ＝2.9957/0.000003＝998577　→　約100万局<BR>
+      <BR>
+      １半荘１２局とすれば、998577/12＝83215　→　約８万３千半荘<BR>
+      <BR>
+      　したがって８万３千半荘 (ＲＴ麻雀で推測すると第４０期相当か)行って、天和が一回も発生しなかった場合、ＲＴ麻雀プログラムの天和発生率が、有意に低く押さえられているといえる。<BR>
+      ---------------------------------------------------------------<BR>
+      <BR>
+      　FMAJAN1/MES12/1120の「半荘100回で１回も役満をあがれない確率」に次ぐアカデミックな「麻雀−確率統計問題−」のつもりですが、どうかな？(。_゜☆＼
+      ベキバキ<BR>
+      <BR>
+      　この２問とも、麻雀における事象を確率統計学(大学の教養レベル)で当てはめて計算しています。事象への当てはめは私のオリジナリティーです。（by　多摩(ターニア)）<BR>
+      <BR>
+      </BLOCKQUOTE>
+      </TD>
+    </TR>
+  </TBODY>
+</TABLE>
+</BLOCKQUOTE>
+</BLOCKQUOTE>
+<P align="center"><A href="pers14.html">以前へ</A>　　<A href="PERSONAL.html">目次へ</A></P>
+</BODY>
+</HTML>

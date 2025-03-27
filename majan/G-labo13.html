@@ -1,0 +1,161 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+<HEAD>
+<META name="GENERATOR" content="IBM HomePage Builder 2001 V5.0.4 for Windows">
+<META http-equiv="Content-Type" content="text/html; charset=Shift_JIS">
+<META http-equiv="Content-Style-Type" content="text/css">
+<TITLE>平方根と清一色</TITLE>
+</HEAD>
+<BODY bgcolor="#ceffce" vlink="#cc0000" alink="#ffff00">
+<BLOCKQUOTE>
+<BLOCKQUOTE>
+<TABLE border="1" bgcolor="#000000">
+  <TBODY>
+    <TR>
+      <TD><FONT color="#ffff00"><I><FONT size="+3">　</FONT></I></FONT><FONT color="#ffff00" size="-1"><I><FONT size="+2"><FONT color="#ffff00" size="-1"><FONT size="+2">Guest </FONT></FONT><FONT color="#ffff00"><FONT size="6" face="Lucida Sans"><FONT color="#ffff00"><FONT size="+3"><FONT color="#ffff00" size="+2">Laboratory</FONT></FONT></FONT></FONT></FONT><B><FONT color="#ffff00"><FONT size="6" face="Lucida Sans"><FONT color="#ffff00"><FONT size="+3"><FONT color="#ffff00">　</FONT></FONT></FONT></FONT></FONT></B></FONT></I><FONT size="+2"><FONT color="#ffff00"><FONT size="6" face="Lucida Sans"><FONT color="#ffff00"><FONT size="+1">ゲスト</FONT></FONT></FONT></FONT></FONT></FONT><FONT color="#ffff00">研究室<I>　</I></FONT><FONT color="#000000"><FONT color="#000000"><I>。</I></FONT></FONT></TD>
+    </TR>
+  </TBODY>
+</TABLE>
+</BLOCKQUOTE>
+</BLOCKQUOTE>
+<BLOCKQUOTE>
+<BLOCKQUOTE>
+<TABLE border="1" bgcolor="#cccccc">
+  <TBODY>
+    <TR>
+      <TD bgcolor="#8080ff"><FONT color="#ffffff"><BR>
+      　　　　　（１3）平方根と清一色<BR>
+      <BR>
+      </FONT></TD>
+    </TR>
+    <TR>
+      <TD bgcolor="#e1ffff">
+      <BLOCKQUOTE><BR>
+      <FONT size="+1" color="#cc0000">r@PCLabo</FONT> 投稿日：2007/08/10(Fri) <BR>
+<BR>
+・8牌と6牌とに分け、小数h0=x1x2x3…x8.y1y2y3…y6を作る<BR>
+・これに0.000001を加えてh1とする<BR>
+・h1^2-h0^2は1より大きい<BR>
+・ゆえに、これらの間には整数がある<BR>
+・間の数の√はx1x2x3…x8.y1y2y3…y6a1a2a3…の形である<BR>
+・この定理を用いると、10^30ではなく10^16までに全てのものが現れることを示せる<BR>
+<BR>
+      h0=X.y1y2…y14 とおいてh1=h0+10^(-14)とすればXの桁数が15以上のときにOKってなりますね。今回は軽く例だけにしておきましょうか<BR>
+: 11123455678999<BR>
+h0=100000000000000.11123455678999<BR>
+h1=100000000000000.11123455679000<BR>
+h0^2 = 10000000000000022246911357998.012<BR>
+h1^2 = 10000000000000022246911358000.012<BR>
+となるので<BR>
+√10000000000000022246911357999 = 100000000000000.&quot;11123455678999&quot;494…<BR>
+√10000000000000022246911358000 = 100000000000000.&quot;11123455678999&quot;994…<BR>
+      こんな感じです。<BR>
+      </BLOCKQUOTE>
+      </TD>
+    </TR>
+    <TR>
+      <TD bgcolor="#ffffbb">
+      <BLOCKQUOTE><BR>
+      <FONT size="+1" color="#0000cc">あさみ</FONT> 投稿日：2007/08/11(Sat) <BR>
+      <BR>ども、r@PCLaboさん<BR>
+      <BR>ふむふむ、なるほろ.......（^-^；<BR>
+      これで１京までチェックすれば、「<FONT color="#0000cc">すべてのチンイツ形が、整数部分を含めた平方根の小数点以下13桁に現れてくる</FONT>」と証明できるわけですね。d(-◎Ω◎-)<BR>
+      将来 ノーベル数学賞が制定されたあかつきには、謹んで申請させていただきます。(^-^)v<BR>
+      </BLOCKQUOTE>
+      </TD>
+    </TR>
+    <TR>
+      <TD bgcolor="#e1ffff">
+      <BLOCKQUOTE><BR>
+      <FONT size="+1" color="#cc0000">r@PCLabo</FONT> 投稿日：2007/08/12(Sun)<BR>
+      <BR>ブログにらすかる氏からコメントいただきました。以下に転載させていただきます。<BR>
+      <BR>
+      <FONT color="#990000">&gt;√2500000000000000000000000001 から<BR>
+      &gt;√2500000000000100000000000000 までの<BR>
+      &gt;100000000000000 個で小数点以下先頭14桁に<BR>
+      &gt;00000000000000〜99999999999999 が順に現れます</FONT><BR>
+      <BR>
+      2500000000000000000000000000は50000000000000の2乗で、rの書いた証明文(小数点以下のものはきちんとした形では書いていませんが、8桁6桁にするバージョンを適宜読み替えてください)の中で、2つの2乗の差が全て1になるようにできるという事実を使った結果といえると思います。<BR>
+      </BLOCKQUOTE>
+      </TD>
+    </TR>
+    <TR>
+      <TD bgcolor="#ffffd0">
+      <BLOCKQUOTE><BR>
+      <FONT size="+1" color="#0000cc">あさみ</FONT> 投稿日：2007/08/13(Mon)<BR>
+      <BR>
+      <FONT color="#990000">&gt;100000000000000 個で小数点以下先頭14桁に</FONT><BR>
+      <BR>
+      へえっ〜(゜０゜)（....って、もう理解の外だけど....(&gt;_&lt;)）　いちおうσ(-_-)なりに強引にまとめると</BLOCKQUOTE>
+      <BLOCKQUOTE>平方根の整数部分を入れて連続14桁を考える場合は、ルート1からルート１京までチェックすれば すべてのチンイツ和了形が現れてくる。</BLOCKQUOTE>
+      <BLOCKQUOTE>平方根の小数点以下の数字だけを対象に考える場合は、<BR>
+      √2500壌 0000垓 0000京 0000兆 0000億 0000万 0001 から<BR>
+      √2500壌 0000 0000垓 0100京 0000億 0000万 0000 までの100兆 個をチェックすれば すべてのチンイツ和了形が小数点以下14桁に現れてくる。</BLOCKQUOTE>
+      <BLOCKQUOTE>　ということになるわけですね。d(-◎Ω◎-)<BR>
+      <BR>
+      ＃旭風さんの“（約100穣＝10の30乗）まで”というのは、「チンイツの14桁を二乗すれば」という目ウロコの話なので、意味が異なるわけですが。<BR>
+      <BR>
+      それにしても円周率和からはじまった話が、こんなに広がりを見せるとは。(^-^)V<BR>
+      </BLOCKQUOTE>
+      </TD>
+    </TR>
+    <TR>
+      <TD bgcolor="#ddffff">
+      <BLOCKQUOTE><BR>
+      <FONT size="+1" color="#cc0000">r@PCLabo</FONT> 投稿日：2007/08/20(Mon)<BR>
+      <BR>参照先をごらんください。さらにすごいことになってます(笑)<BR>
+      <BR>数学と麻雀が絡むと大抵、らすかるさん無敵です。<BR>
+      http://blog.livedoor.jp/r_risd/archives/51056352.html#comments<BR>
+      </BLOCKQUOTE>
+      </TD>
+    </TR>
+    <TR>
+      <TD bgcolor="#ffffd9">
+      <BLOCKQUOTE><BR>
+      <FONT size="+1" color="#0000cc">あさみ</FONT> 投稿日：2007/08/21(Tue)<BR>
+      <BR>
+      　ども、r@PCLabo さん<BR>
+      <BR>
+      　な〜るほど。<BR>
+      　整数部も含んだ上位14桁として、すべての清一色和了形数13277個について らすかるさんがチェックしたところ、最後は√1111852851（33334444555577）であったということですね。<BR>
+      <BR>
+      　これでルート和は旭風さんが検証した√24が最初、最後が√1111852851ということが判明したわけです。いや、すべてのルート和が解明されて、まことに目出度い目出度い。(^-^)V<BR>
+      <BR>
+      　それにしても清一色和了形数13277個の一つ前が√4億9451万722なのに、最後が√11億1185万2851とは、数字がずいぶん飛んでます。大物は、あわてず騒がずゆっくり登場するというところでしょうか。（^-^；<BR>
+      <BR>
+      <FONT color="#990000">&gt; 数学と麻雀が絡むと大抵、らすかるさん無敵です。<BR>
+      </FONT><BR>
+      　σ(-_-)のような文学青年には、スゴイとしかいいようがない。(^-^；<BR>
+      </BLOCKQUOTE>
+      </TD>
+    </TR>
+    <TR>
+      <TD bgcolor="#ddffff">
+      <BLOCKQUOTE><BR>
+      <FONT size="+1" color="#cc0000">r@PCLabo</FONT>　投稿日：2007/08/27(Mon) <BR>
+      <BR>
+      らすかるさんをそそのかしたら、さらにすごいことになりました。<BR>
+      送ってくださった結果のテキストファイルが合計で1.87MBにもなっています。<BR>
+      <BR>●3乗根から7乗根<BR>全ての和了形に対して、乗根前の数を導かれました。<BR>これ以降になると、結果を全て出すのには時間がかかりすぎるだろうとのことです。きりもないですし。<BR>
+      <BR>
+      ●p乗根のうち最小のnが和了形であるものについても調べられ、p≧230ならば11112222333344が最小のnに対する和了形だという事実も導かれました。(事実を聞けば証明文をつけるのは容易ですぐに分かりましたが、結果を知らないと思いつくのは大変そうです。)<BR>
+      </BLOCKQUOTE>
+      </TD>
+    </TR>
+    <TR>
+      <TD bgcolor="#ffffd9">
+      <BLOCKQUOTE><BR>
+      <FONT size="+1" color="#0000cc">あさみ</FONT>　投稿日：2007/08/27(Mon) <BR>
+      <BR>ども、r@PCLaboさん<BR>
+      <BR>いや、もうσ(-_-)レベルには どうコメントしていいか分かりません。<BR>
+      たぶん“前人未踏のすごい数値計算なんだろうな”ぐらいとしか。（^-^；<BR>
+      </BLOCKQUOTE>
+      </TD>
+    </TR>
+  </TBODY>
+</TABLE>
+</BLOCKQUOTE>
+</BLOCKQUOTE>
+<DIV align="center"><A href="G-labo12.html">以前へ</A>　　　<A href="G-labo14.html">以降へ</A>　　<A href="GUESTLABO.html">目次へ</A></DIV>
+</BODY>
+</HTML>

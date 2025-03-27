@@ -1,0 +1,437 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+<HEAD>
+<META name="GENERATOR" content="IBM HomePage Builder 2001 V5.0.3 for Windows">
+<META http-equiv="Content-Type" content="text/html; charset=Shift_JIS">
+<META http-equiv="Content-Style-Type" content="text/css">
+<TITLE>麻雀点数論 21</TITLE>
+</HEAD>
+<BODY bgcolor="#ddffdd" vlink="#cc0000" alink="#ffff00">
+<BLOCKQUOTE>
+<BLOCKQUOTE>
+<TABLE border="1" bgcolor="#000000">
+  <TBODY>
+    <TR>
+      <TD bgcolor="#000000"><FONT size="+2" color="#ffff00"><I>　Ｔreatis</I></FONT><FONT size="+1" color="#ffff00">　論考</FONT>。</TD>
+    </TR>
+  </TBODY>
+</TABLE>
+</BLOCKQUOTE>
+</BLOCKQUOTE>
+<BLOCKQUOTE>
+<CENTER>
+<BLOCKQUOTE>
+<TABLE border="1" bgcolor="#cccccc">
+  <TBODY>
+    <TR>
+      <TD bgcolor="#8080ff"><FONT color="#ffffff" size="+1"><BR>
+      　　　　（２１）麻雀点数論　１2<BR>
+      <BR>
+      </FONT></TD>
+    </TR>
+    <TR>
+      <TD bgcolor="#ffffd7">
+      <BLOCKQUOTE><BR>
+      <B>第９項　１０１式</B><BR>
+      <BR>
+      　古川凱章氏が主催する麻雀１０１連盟で採用されている計算法である。中国から伝来した幺二（ヤオアル）式計算法とは、「翻数にしたがって子１人当たりの点数を算出し、親はその倍額を授受する」という計算法である。<BR>
+      <BR>
+      　そして翻数を累乗する過程において、連底等に何も手を加えない。そこで常に二翻は一翻の、三翻は二翻の倍額となり、親と子の精算比率も常に１（子）：２（親）となる。しかしダブル切り上げ式、オール切り上げ式では途中段階において数度の端数切り上げをするため、親の得点は常に子の倍額とはゆかなくなった。たとえば30符一翻、および40符一翻の和了は次のような精算となる。　
+      <BLOCKQUOTE>
+      <BLOCKQUOTE>
+      <BLOCKQUOTE>表11　 一般麻雀</BLOCKQUOTE>
+      </BLOCKQUOTE>
+      <CENTER>
+      <TABLE border="1" bgcolor="#cccccc">
+        <TBODY>
+          <TR>
+            <TD colspan="2" align="center" bgcolor="#80ff80">３０符一翻</TD>
+          </TR>
+          <TR>
+            <TD bgcolor="#dfffff">(28≒30)2×2×2=240≒300</TD>
+            <TD bgcolor="#ffffff">子供1人の支払い額</TD>
+          </TR>
+          <TR>
+            <TD bgcolor="#dfffff">(28≒30)2×2×2×2=4840≒500</TD>
+            <TD bgcolor="#ffffff">親の支払い額</TD>
+          </TR>
+          <TR>
+            <TD colspan="2" align="center" bgcolor="#80ff80">４０符一翻</TD>
+          </TR>
+          <TR>
+            <TD bgcolor="#d7ffff">(36≒40)2×2×2=320≒400</TD>
+            <TD bgcolor="#ffffff">子供1人の支払い額</TD>
+          </TR>
+          <TR>
+            <TD bgcolor="#d7ffff">(36≒40)2×2×2×2=640≒700</TD>
+            <TD bgcolor="#ffffff">親の支払い額</TD>
+          </TR>
+        </TBODY>
+      </TABLE>
+      </CENTER>
+      </BLOCKQUOTE>
+      　見たとおり親と子の支払いは倍額となっていない。これはおかしいというので、101ルールでは幺二式を徹底させるために次のような計算を行う。
+      <BLOCKQUOTE>
+      <BLOCKQUOTE>
+      <BLOCKQUOTE>表12　101式</BLOCKQUOTE>
+      </BLOCKQUOTE>
+      </BLOCKQUOTE>
+      <CENTER>
+      <TABLE border="1" bgcolor="#cccccc">
+        <TBODY>
+          <TR>
+            <TD colspan="2" align="center" bgcolor="#80ff80">３０符一翻</TD>
+          </TR>
+          <TR>
+            <TD bgcolor="#d7ffff">(28≒30)2×2×2＝240≒300</TD>
+            <TD bgcolor="#ffffff">子供1人の支払い額</TD>
+          </TR>
+          <TR>
+            <TD bgcolor="#d7ffff">300×２　　　　　　　　　　＝600</TD>
+            <TD bgcolor="#ffffff">親の支払い額</TD>
+          </TR>
+          <TR>
+            <TD colspan="2" align="center" bgcolor="#80ff80">４０符一翻</TD>
+          </TR>
+          <TR>
+            <TD bgcolor="#d9ffff">(36≒40)2×2×2＝320≒400</TD>
+            <TD bgcolor="#ffffff">子供1人の支払い額</TD>
+          </TR>
+          <TR>
+            <TD bgcolor="#d9ffff">400×2　　　　　　　　　　＝800</TD>
+            <TD bgcolor="#ffffff">親の支払い額</TD>
+          </TR>
+        </TBODY>
+      </TABLE>
+      </CENTER>
+      <BR>
+      　たしかに親と子の比率においては完璧な幺二式となっている。しかし全体的な観点からは問題がないわけではない。
+      <BLOCKQUOTE>
+      <BLOCKQUOTE>
+      <BLOCKQUOTE>表13　101式得点表</BLOCKQUOTE>
+      </BLOCKQUOTE>
+      </BLOCKQUOTE>
+      <CENTER>
+      <TABLE border="1" bgcolor="#cccccc">
+        <TBODY>
+          <TR>
+            <TD colspan="5" align="center" bgcolor="#80ff80">子(両ゾロ加翻済み)</TD>
+          </TR>
+          <TR>
+            <TD width="105" align="center" bgcolor="#dfffff">符</TD>
+            <TD width="37" bgcolor="#ffffff">三翻</TD>
+            <TD bgcolor="#ffffff">四翻</TD>
+            <TD bgcolor="#ffffff">五翻</TD>
+            <TD bgcolor="#ffffff">六翻</TD>
+          </TR>
+          <TR>
+            <TD align="center" bgcolor="#dfffff">30</TD>
+            <TD bgcolor="#ffffff">1200</TD>
+            <TD bgcolor="#ffffff">2000</TD>
+            <TD bgcolor="#ffffff">4000</TD>
+            <TD bgcolor="#ffffff" rowspan="8">8000</TD>
+          </TR>
+          <TR>
+            <TD width="105" align="center" bgcolor="#dfffff">40</TD>
+            <TD width="37" bgcolor="#ffffff">1600</TD>
+            <TD bgcolor="#ffffff">2800</TD>
+            <TD bgcolor="#ffffff">5200</TD>
+          </TR>
+          <TR>
+            <TD width="105" align="center" bgcolor="#dfffff">50</TD>
+            <TD width="37" bgcolor="#ffffff">1600</TD>
+            <TD bgcolor="#ffffff">3200</TD>
+            <TD bgcolor="#ffffff">6400</TD>
+          </TR>
+          <TR>
+            <TD bgcolor="#dfffff" align="center">60</TD>
+            <TD bgcolor="#ffffff">2000</TD>
+            <TD bgcolor="#ffffff">4000</TD>
+            <TD rowspan="5" bgcolor="#ffffff">8000</TD>
+          </TR>
+          <TR>
+            <TD bgcolor="#dfffff" align="center">70</TD>
+            <TD bgcolor="#ffffff">2400</TD>
+            <TD bgcolor="#ffffff">4800</TD>
+          </TR>
+          <TR>
+            <TD bgcolor="#dfffff" align="center">80</TD>
+            <TD bgcolor="#ffffff">2800</TD>
+            <TD bgcolor="#ffffff">5200</TD>
+          </TR>
+          <TR>
+            <TD bgcolor="#dfffff" align="center">90</TD>
+            <TD bgcolor="#ffffff" rowspan="2">3200</TD>
+            <TD bgcolor="#ffffff">6000</TD>
+          </TR>
+          <TR>
+            <TD bgcolor="#dfffff" align="center">100</TD>
+            <TD bgcolor="#ffffff">6400</TD>
+          </TR>
+          <TR>
+            <TD colspan="5" align="center" bgcolor="#80ff80">親(両ゾロ加翻済み)</TD>
+          </TR>
+          <TR>
+            <TD width="105" align="center" bgcolor="#e1ffff">符 　</TD>
+            <TD width="37" bgcolor="#ffffff">三翻</TD>
+            <TD bgcolor="#ffffff">四翻</TD>
+            <TD bgcolor="#ffffff">五翻</TD>
+            <TD bgcolor="#ffffff">六翻</TD>
+          </TR>
+          <TR>
+            <TD width="105" align="center" bgcolor="#e1ffff">30</TD>
+            <TD width="37" bgcolor="#ffffff">1800</TD>
+            <TD bgcolor="#ffffff">3000</TD>
+            <TD bgcolor="#ffffff">6000</TD>
+            <TD bgcolor="#ffffff" rowspan="7">12000</TD>
+          </TR>
+          <TR>
+            <TD width="105" align="center" bgcolor="#e1ffff">40</TD>
+            <TD width="37" bgcolor="#ffffff">2400</TD>
+            <TD bgcolor="#ffffff">4200</TD>
+            <TD bgcolor="#ffffff">7800</TD>
+          </TR>
+          <TR>
+            <TD width="105" align="center" bgcolor="#e1ffff">50</TD>
+            <TD width="37" bgcolor="#ffffff">2400</TD>
+            <TD bgcolor="#ffffff">4800</TD>
+            <TD bgcolor="#ffffff">9600</TD>
+          </TR>
+          <TR>
+            <TD bgcolor="#e1ffff" align="center">60</TD>
+            <TD bgcolor="#ffffff">3000</TD>
+            <TD bgcolor="#ffffff">6000</TD>
+            <TD bgcolor="#ffffff" rowspan="5">12000</TD>
+          </TR>
+          <TR>
+            <TD bgcolor="#e1ffff" align="center">70</TD>
+            <TD bgcolor="#ffffff">3600</TD>
+            <TD bgcolor="#ffffff">6900</TD>
+          </TR>
+          <TR>
+            <TD bgcolor="#e1ffff" align="center">80</TD>
+            <TD bgcolor="#ffffff">4200</TD>
+            <TD bgcolor="#ffffff">7800</TD>
+          </TR>
+          <TR>
+            <TD bgcolor="#e1ffff" align="center">90</TD>
+            <TD bgcolor="#ffffff" rowspan="2">4800</TD>
+            <TD bgcolor="#ffffff">9000</TD>
+          </TR>
+          <TR>
+            <TD bgcolor="#e1ffff" align="center">100</TD>
+            <TD bgcolor="#ffffff">9600</TD>
+            <TD bgcolor="#ffffff"></TD>
+          </TR>
+        </TBODY>
+      </TABLE>
+      </CENTER>
+      <BR>
+      　それはまず第一に、50符ライン以外では三翻・四翻・五翻の部分で得点が順次倍額になっていないという点である。本来、累乗計算とは、四翻点は三翻点の、三翻点は二翻点の倍額となる計算法である。そこで「得点は累乗計算」というのであれば、各符においては三翻点のみ算出し、四翻以降は、三翻点を累乗すれば事足りる筈。<BR>
+      <BR>
+      　しかし現行一般麻雀では、 三翻/四翻/五翻の各翻数において、逐次その翻数まで連底（小符合計点）の累乗を行い、その時点で端数切り上げを行う。そのため各翻数における得点が必ずしも倍額にならくなっている（一般麻雀で、なぜそのような計算法を行っているか、という点については割愛）。そして101式計算も、この累乗計算においては一般麻雀と同じ累乗方式（各翻数において、逐次その翻数まで連底の累乗を行い、その時点で端数切り上げ）を採用している。その結果、二翻点が一翻点の倍額、三翻点が二翻点の倍額とならないという一般麻雀と同じ不整合が生じている。<BR>
+      <BR>
+      　もちろん四翻点は必ず三翻点の倍額にならなければならないという法律はない。しかし現行一般麻雀における計算法の不適切さを論じ、新規計算法を立ち上げたにも関わらず、累乗点であるべきものが累乗になっていないというのは一つのウイークポイントといえよう。<BR>
+      <BR>
+      　また次には、40符三翻点と50符三翻点、および90符三翻点と100符三翻点がが同一となる。これも原因は、「各翻数において、逐次その翻数まで連底の累乗を行い、その時点で端数切り上げを行う」という一般麻雀計算法を採用していることから生じている。<BR>
+      <BR>
+      　同じ方式で計算しているにもかかわらず、一般麻雀で40符と50符の得点が同一となることはない。これは一般麻雀では、子と親の得点については連底の累乗を別途計算するのに対し、101では子の得点だけを算出し、親の得点はその得点を倍額にするため生じている。<BR>
+      <BR>
+      　この「子の得点だけを算出し、親の得点はその得点を倍額にする」というのが幺二式の基本であり、101計算法のレーゾンデートルでもある。幺二式の厳密適用がポリシーであるなら、それはそれでかまわない。しかしその厳密適用が、連底の端数処理については
+      ダブル切り上げという一般麻雀方式の上に存在しているため、本来異なるはずの40符三翻と50符三翻点が同一という現象が生じているのである。<BR>
+      <BR>
+      　そしてもし、「そのような細部のことは大きな問題ではない」というのであれば、敢えて細部を変更して一般麻雀と異なる計算式を案出した意味はないことになる。<BR>
+      <BR>
+      <FONT color="#ff0000">※おまけ</FONT><FONT color="#0000ff"><B><BR>
+      101シュミレーション</B><BR>
+      </FONT><FONT color="#0000cc"><FONT color="#0000cc"><BR>
+      </FONT></FONT><FONT color="#000099" size="-1">　前述の通り、現行の101式は、符計算において一般麻雀法を用いている（各翻数において、逐次その翻数まで連底（小符合計点）の累乗計算を行い、その時点で端数切り上げを行う）。そのため30符/40符の各ラインにおいて、累乗計算であるにも関わらず五翻点は四翻点の倍額、四翻点は三翻点の倍額とはなっていない。しかし「累乗」とはＡの点数を倍額にすること。そこで現行計算の曖昧さを指摘するなら、１０１が曖昧ではよろしくない。そこで累乗点にもその厳密さを求めるなら、得点は基礎部分である三翻点のみを算出し、四翻以降はそれを累乗することになる。</FONT><FONT color="#000099"><BR>
+      表14<BR>
+      </FONT>
+      <CENTER>
+      <TABLE border="1" bgcolor="#cccccc">
+        <TBODY>
+          <TR>
+            <TD colspan="6" align="center" bgcolor="#80ff80">子(両ゾロ加翻済み)</TD>
+          </TR>
+          <TR>
+            <TD width="105" align="center" bgcolor="#d9ffff">符</TD>
+            <TD width="37" bgcolor="#ffffff" colspan="2">三翻</TD>
+            <TD bgcolor="#ffffff">四翻</TD>
+            <TD bgcolor="#ffffff">五翻</TD>
+            <TD bgcolor="#ffffff">六翻</TD>
+          </TR>
+          <TR>
+            <TD align="center" bgcolor="#d9ffff">30</TD>
+            <TD bgcolor="#ffffff" colspan="2">1200</TD>
+            <TD bgcolor="#ffffff">2400</TD>
+            <TD bgcolor="#ffffff">4800</TD>
+            <TD bgcolor="#ffffff" rowspan="6">8000</TD>
+          </TR>
+          <TR>
+            <TD width="105" align="center" bgcolor="#d9ffff">40/50</TD>
+            <TD width="37" bgcolor="#ffffff" colspan="2">1600</TD>
+            <TD bgcolor="#ffffff">3200</TD>
+            <TD bgcolor="#ffffff">6400</TD>
+          </TR>
+          <TR>
+            <TD bgcolor="#d9ffff" align="center">60</TD>
+            <TD bgcolor="#ffffff" colspan="2">2000</TD>
+            <TD bgcolor="#ffffff">4000</TD>
+            <TD rowspan="4" bgcolor="#ffffff">8000</TD>
+          </TR>
+          <TR>
+            <TD bgcolor="#d9ffff" align="center">70</TD>
+            <TD bgcolor="#ffffff" colspan="2">2400</TD>
+            <TD bgcolor="#ffffff">4800</TD>
+          </TR>
+          <TR>
+            <TD bgcolor="#d9ffff" align="center">80</TD>
+            <TD bgcolor="#ffffff" colspan="2">2800</TD>
+            <TD bgcolor="#ffffff">5600</TD>
+          </TR>
+          <TR>
+            <TD bgcolor="#d9ffff" align="center">90/100</TD>
+            <TD bgcolor="#ffffff" colspan="2">3200</TD>
+            <TD bgcolor="#ffffff">6400</TD>
+          </TR>
+          <TR>
+            <TD colspan="6" align="center" bgcolor="#80ff80">親(両ゾロ加翻済み)</TD>
+          </TR>
+          <TR>
+            <TD width="105" align="center" bgcolor="#d9ffff">符 　</TD>
+            <TD width="37" bgcolor="#ffffff" colspan="2">三翻</TD>
+            <TD bgcolor="#ffffff">四翻</TD>
+            <TD bgcolor="#ffffff">五翻</TD>
+            <TD bgcolor="#ffffff">六翻</TD>
+          </TR>
+          <TR>
+            <TD width="105" align="center" bgcolor="#d9ffff">30</TD>
+            <TD width="37" bgcolor="#ffffff" colspan="2">1800</TD>
+            <TD bgcolor="#ffffff">3600</TD>
+            <TD bgcolor="#ffffff">7200</TD>
+            <TD bgcolor="#ffffff" rowspan="6">12000</TD>
+          </TR>
+          <TR>
+            <TD width="105" align="center" bgcolor="#d9ffff">40/50</TD>
+            <TD width="37" bgcolor="#ffffff" colspan="2">2400</TD>
+            <TD bgcolor="#ffffff">4800</TD>
+            <TD bgcolor="#ffffff">9600</TD>
+          </TR>
+          <TR>
+            <TD bgcolor="#d9ffff" align="center">60</TD>
+            <TD bgcolor="#ffffff" colspan="2">3000</TD>
+            <TD bgcolor="#ffffff">6000</TD>
+            <TD bgcolor="#ffffff" rowspan="4">12000</TD>
+          </TR>
+          <TR>
+            <TD bgcolor="#d9ffff" align="center">70</TD>
+            <TD bgcolor="#ffffff" colspan="2">3600</TD>
+            <TD bgcolor="#ffffff">7200</TD>
+          </TR>
+          <TR>
+            <TD bgcolor="#d9ffff" align="center">80</TD>
+            <TD bgcolor="#ffffff" colspan="2">4200</TD>
+            <TD bgcolor="#ffffff">8400</TD>
+          </TR>
+          <TR>
+            <TD bgcolor="#d9ffff" align="center">90/100</TD>
+            <TD bgcolor="#ffffff" colspan="2">4800</TD>
+            <TD bgcolor="#ffffff">9600</TD>
+          </TR>
+        </TBODY>
+      </TABLE>
+      </CENTER>
+      <FONT color="#0000cc"><BR>
+      　しかしさらに考えると、本来、30符四翻点は60符三翻点と等しく、30符五翻点は60符四翻点と等しいはず。したがって30符四翻/五翻が2400/4800(子)であれば、60符三翻/四翻も2400/4800(子)とならなければならない（40符/80符、50符/100符の関係についても同様）。すると結果は下記のようになる。</FONT>
+      <BLOCKQUOTE>
+      <BLOCKQUOTE>
+      <BLOCKQUOTE><FONT color="#0000ff">表15</FONT></BLOCKQUOTE>
+      </BLOCKQUOTE>
+      </BLOCKQUOTE>
+      <CENTER>
+      <TABLE border="1" bgcolor="#cccccc">
+        <TBODY>
+          <TR>
+            <TD colspan="6" align="center" bgcolor="#acffac">子(両ゾロ加翻済み)</TD>
+          </TR>
+          <TR>
+            <TD width="105" align="center" bgcolor="#ddffff">符</TD>
+            <TD width="37" bgcolor="#ffffff">三翻</TD>
+            <TD bgcolor="#ffffff">四翻</TD>
+            <TD bgcolor="#ffffff" colspan="2">五翻</TD>
+            <TD bgcolor="#ffffff">六翻</TD>
+          </TR>
+          <TR>
+            <TD align="center" bgcolor="#ddffff">30</TD>
+            <TD bgcolor="#ffffff">1200</TD>
+            <TD bgcolor="#ffffff">2400</TD>
+            <TD bgcolor="#ffffff" colspan="2">4800</TD>
+            <TD bgcolor="#ffffff" rowspan="4">8000</TD>
+          </TR>
+          <TR>
+            <TD width="105" align="center" bgcolor="#ddffff">40/50</TD>
+            <TD width="37" bgcolor="#ffffff">1600</TD>
+            <TD bgcolor="#ffffff">3200</TD>
+            <TD bgcolor="#ffffff" colspan="2">6400</TD>
+          </TR>
+          <TR>
+            <TD bgcolor="#ddffff" align="center">60/70</TD>
+            <TD bgcolor="#ffffff">2400</TD>
+            <TD bgcolor="#ffffff">4800</TD>
+            <TD bgcolor="#ffffff" colspan="2" rowspan="2">8000</TD>
+          </TR>
+          <TR>
+            <TD align="center" bgcolor="#ddffff">80/90/100</TD>
+            <TD bgcolor="#ffffff">3200</TD>
+            <TD bgcolor="#ffffff">6400</TD>
+          </TR>
+          <TR>
+            <TD colspan="6" align="center" bgcolor="#bbffbb">親(両ゾロ加翻済み)</TD>
+          </TR>
+          <TR>
+            <TD width="105" align="center" bgcolor="#dfffff">符 　</TD>
+            <TD width="37" bgcolor="#ffffff">三翻</TD>
+            <TD bgcolor="#ffffff">四翻</TD>
+            <TD bgcolor="#ffffff" colspan="2">五翻</TD>
+            <TD bgcolor="#ffffff">六翻</TD>
+          </TR>
+          <TR>
+            <TD width="105" align="center" bgcolor="#dfffff">30</TD>
+            <TD width="37" bgcolor="#ffffff">1800</TD>
+            <TD bgcolor="#ffffff">3600</TD>
+            <TD bgcolor="#ffffff" colspan="2">7200</TD>
+            <TD bgcolor="#ffffff" rowspan="4">12000</TD>
+          </TR>
+          <TR>
+            <TD width="105" align="center" bgcolor="#dfffff">40/50</TD>
+            <TD width="37" bgcolor="#ffffff">2400</TD>
+            <TD bgcolor="#ffffff" align="center">4800</TD>
+            <TD bgcolor="#ffffff" colspan="2">9600</TD>
+          </TR>
+          <TR>
+            <TD bgcolor="#dfffff" align="center">60/70</TD>
+            <TD bgcolor="#ffffff">3600</TD>
+            <TD bgcolor="#ffffff">7200</TD>
+            <TD bgcolor="#ffffff" colspan="2" rowspan="2">12000</TD>
+          </TR>
+          <TR>
+            <TD align="center" bgcolor="#dfffff">80/90/100</TD>
+            <TD bgcolor="#ffffff">4800</TD>
+            <TD bgcolor="#ffffff">9600</TD>
+          </TR>
+        </TBODY>
+      </TABLE>
+      </CENTER>
+      </BLOCKQUOTE>
+      <BR>
+      </TD>
+    </TR>
+  </TBODY>
+</TABLE>
+<BR>
+<A href="tre20.html">以前へ</A>　　<A href="tre22.html">以降へ</A>　　<A href="TREATIS.html">目次へ</A></BLOCKQUOTE>
+</CENTER>
+</BLOCKQUOTE>
+</BODY>
+</HTML>

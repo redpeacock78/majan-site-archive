@@ -1,0 +1,800 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:x="urn:schemas-microsoft-com:office:excel"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=Shift_JIS">
+<meta name=ProgId content=Excel.Sheet>
+<META name="Generator" content="IBM HomePage Builder 2001 V5.0.3 for Windows">
+<META http-equiv="Content-Style-Type" content="text/css">
+<META name="GENERATOR" content="IBM WebSphere Homepage Builder V6.0.1 for Windows">
+<style>
+<!--table
+	{mso-displayed-decimal-separator:"\.";
+	mso-displayed-thousand-separator:"\,";}
+@page
+	{mso-header-data:&A;
+	mso-footer-data:"- &P -";
+	margin:.98in .79in .98in .79in;
+	mso-header-margin:.51in;
+	mso-footer-margin:.51in;}
+tr
+	{mso-height-source:auto;
+	mso-ruby-visibility:none;}
+col
+	{mso-width-source:auto;
+	mso-ruby-visibility:none;}
+br
+	{mso-data-placement:same-cell;}
+.style0
+	{mso-number-format:General;
+	text-align:general;
+	vertical-align:bottom;
+	white-space:nowrap;
+	mso-rotate:0;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	color:windowtext;
+	font-size:11.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:"ＭＳ Ｐゴシック";
+	mso-generic-font-family:auto;
+	mso-font-charset:128;
+	border:none;
+	mso-protection:locked visible;
+	mso-style-name:標準;
+	mso-style-id:0;}
+td
+	{mso-style-parent:style0;
+	padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:windowtext;
+	font-size:11.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:"ＭＳ Ｐゴシック";
+	mso-generic-font-family:auto;
+	mso-font-charset:128;
+	mso-number-format:General;
+	text-align:general;
+	vertical-align:bottom;
+	border:none;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	mso-protection:locked visible;
+	white-space:nowrap;
+	mso-rotate:0;}
+.xl24
+	{mso-style-parent:style0;
+	font-size:12.0pt;
+	font-weight:700;
+	font-family:"ＭＳ Ｐゴシック", monospace;
+	mso-font-charset:128;
+	border:.5pt solid windowtext;}
+.xl25
+	{mso-style-parent:style0;
+	font-size:12.0pt;
+	font-family:"ＭＳ Ｐゴシック", monospace;
+	mso-font-charset:128;}
+.xl26
+	{mso-style-parent:style0;
+	font-size:12.0pt;
+	font-weight:700;
+	font-family:"ＭＳ Ｐゴシック", monospace;
+	mso-font-charset:128;
+	mso-number-format:"\[ENG\]mmm\\-yy";
+	border:.5pt solid windowtext;}
+ruby
+	{ruby-align:left;}
+rt
+	{color:windowtext;
+	font-size:6.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:"ＭＳ Ｐゴシック", monospace;
+	mso-font-charset:128;
+	mso-char-type:katakana;
+	display:none;}
+-->
+</style>
+<!--[if gte mso 9]><xml>
+ <x:ExcelWorkbook>
+  <x:ExcelWorksheets>
+   <x:ExcelWorksheet>
+    <x:Name>漢籍</x:Name>
+    <x:WorksheetOptions>
+     <x:DefaultRowHeight>495</x:DefaultRowHeight>
+     <x:Unsynced/>
+     <x:Selected/>
+     <x:TopRowVisible>59</x:TopRowVisible>
+     <x:Panes>
+      <x:Pane>
+       <x:Number>3</x:Number>
+       <x:ActiveRow>62</x:ActiveRow>
+       <x:ActiveCol>5</x:ActiveCol>
+      </x:Pane>
+     </x:Panes>
+     <x:ProtectContents>False</x:ProtectContents>
+     <x:ProtectObjects>False</x:ProtectObjects>
+     <x:ProtectScenarios>False</x:ProtectScenarios>
+    </x:WorksheetOptions>
+    <x:Sorting>
+     <x:Sort>列 G</x:Sort>
+    </x:Sorting>
+   </x:ExcelWorksheet>
+   <x:ExcelWorksheet>
+    <x:Name>Sheet2</x:Name>
+    <x:WorksheetOptions>
+     <x:DefaultRowHeight>270</x:DefaultRowHeight>
+     <x:ProtectContents>False</x:ProtectContents>
+     <x:ProtectObjects>False</x:ProtectObjects>
+     <x:ProtectScenarios>False</x:ProtectScenarios>
+    </x:WorksheetOptions>
+   </x:ExcelWorksheet>
+   <x:ExcelWorksheet>
+    <x:Name>Sheet3</x:Name>
+    <x:WorksheetOptions>
+     <x:DefaultRowHeight>270</x:DefaultRowHeight>
+     <x:ProtectContents>False</x:ProtectContents>
+     <x:ProtectObjects>False</x:ProtectObjects>
+     <x:ProtectScenarios>False</x:ProtectScenarios>
+    </x:WorksheetOptions>
+   </x:ExcelWorksheet>
+   <x:ExcelWorksheet>
+    <x:Name>Sheet4</x:Name>
+    <x:WorksheetOptions>
+     <x:DefaultRowHeight>270</x:DefaultRowHeight>
+     <x:ProtectContents>False</x:ProtectContents>
+     <x:ProtectObjects>False</x:ProtectObjects>
+     <x:ProtectScenarios>False</x:ProtectScenarios>
+    </x:WorksheetOptions>
+   </x:ExcelWorksheet>
+   <x:ExcelWorksheet>
+    <x:Name>Sheet5</x:Name>
+    <x:WorksheetOptions>
+     <x:DefaultRowHeight>270</x:DefaultRowHeight>
+     <x:ProtectContents>False</x:ProtectContents>
+     <x:ProtectObjects>False</x:ProtectObjects>
+     <x:ProtectScenarios>False</x:ProtectScenarios>
+    </x:WorksheetOptions>
+   </x:ExcelWorksheet>
+   <x:ExcelWorksheet>
+    <x:Name>Sheet6</x:Name>
+    <x:WorksheetOptions>
+     <x:DefaultRowHeight>270</x:DefaultRowHeight>
+     <x:ProtectContents>False</x:ProtectContents>
+     <x:ProtectObjects>False</x:ProtectObjects>
+     <x:ProtectScenarios>False</x:ProtectScenarios>
+    </x:WorksheetOptions>
+   </x:ExcelWorksheet>
+   <x:ExcelWorksheet>
+    <x:Name>Sheet7</x:Name>
+    <x:WorksheetOptions>
+     <x:DefaultRowHeight>270</x:DefaultRowHeight>
+     <x:ProtectContents>False</x:ProtectContents>
+     <x:ProtectObjects>False</x:ProtectObjects>
+     <x:ProtectScenarios>False</x:ProtectScenarios>
+    </x:WorksheetOptions>
+   </x:ExcelWorksheet>
+   <x:ExcelWorksheet>
+    <x:Name>Sheet8</x:Name>
+    <x:WorksheetOptions>
+     <x:DefaultRowHeight>270</x:DefaultRowHeight>
+     <x:ProtectContents>False</x:ProtectContents>
+     <x:ProtectObjects>False</x:ProtectObjects>
+     <x:ProtectScenarios>False</x:ProtectScenarios>
+    </x:WorksheetOptions>
+   </x:ExcelWorksheet>
+   <x:ExcelWorksheet>
+    <x:Name>Sheet9</x:Name>
+    <x:WorksheetOptions>
+     <x:DefaultRowHeight>270</x:DefaultRowHeight>
+     <x:ProtectContents>False</x:ProtectContents>
+     <x:ProtectObjects>False</x:ProtectObjects>
+     <x:ProtectScenarios>False</x:ProtectScenarios>
+    </x:WorksheetOptions>
+   </x:ExcelWorksheet>
+   <x:ExcelWorksheet>
+    <x:Name>Sheet10</x:Name>
+    <x:WorksheetOptions>
+     <x:DefaultRowHeight>270</x:DefaultRowHeight>
+     <x:ProtectContents>False</x:ProtectContents>
+     <x:ProtectObjects>False</x:ProtectObjects>
+     <x:ProtectScenarios>False</x:ProtectScenarios>
+    </x:WorksheetOptions>
+   </x:ExcelWorksheet>
+   <x:ExcelWorksheet>
+    <x:Name>Sheet11</x:Name>
+    <x:WorksheetOptions>
+     <x:DefaultRowHeight>270</x:DefaultRowHeight>
+     <x:ProtectContents>False</x:ProtectContents>
+     <x:ProtectObjects>False</x:ProtectObjects>
+     <x:ProtectScenarios>False</x:ProtectScenarios>
+    </x:WorksheetOptions>
+   </x:ExcelWorksheet>
+   <x:ExcelWorksheet>
+    <x:Name>Sheet12</x:Name>
+    <x:WorksheetOptions>
+     <x:DefaultRowHeight>270</x:DefaultRowHeight>
+     <x:ProtectContents>False</x:ProtectContents>
+     <x:ProtectObjects>False</x:ProtectObjects>
+     <x:ProtectScenarios>False</x:ProtectScenarios>
+    </x:WorksheetOptions>
+   </x:ExcelWorksheet>
+   <x:ExcelWorksheet>
+    <x:Name>Sheet13</x:Name>
+    <x:WorksheetOptions>
+     <x:DefaultRowHeight>270</x:DefaultRowHeight>
+     <x:ProtectContents>False</x:ProtectContents>
+     <x:ProtectObjects>False</x:ProtectObjects>
+     <x:ProtectScenarios>False</x:ProtectScenarios>
+    </x:WorksheetOptions>
+   </x:ExcelWorksheet>
+   <x:ExcelWorksheet>
+    <x:Name>Sheet14</x:Name>
+    <x:WorksheetOptions>
+     <x:DefaultRowHeight>270</x:DefaultRowHeight>
+     <x:ProtectContents>False</x:ProtectContents>
+     <x:ProtectObjects>False</x:ProtectObjects>
+     <x:ProtectScenarios>False</x:ProtectScenarios>
+    </x:WorksheetOptions>
+   </x:ExcelWorksheet>
+   <x:ExcelWorksheet>
+    <x:Name>Sheet15</x:Name>
+    <x:WorksheetOptions>
+     <x:DefaultRowHeight>270</x:DefaultRowHeight>
+     <x:ProtectContents>False</x:ProtectContents>
+     <x:ProtectObjects>False</x:ProtectObjects>
+     <x:ProtectScenarios>False</x:ProtectScenarios>
+    </x:WorksheetOptions>
+   </x:ExcelWorksheet>
+   <x:ExcelWorksheet>
+    <x:Name>Sheet16</x:Name>
+    <x:WorksheetOptions>
+     <x:DefaultRowHeight>270</x:DefaultRowHeight>
+     <x:ProtectContents>False</x:ProtectContents>
+     <x:ProtectObjects>False</x:ProtectObjects>
+     <x:ProtectScenarios>False</x:ProtectScenarios>
+    </x:WorksheetOptions>
+   </x:ExcelWorksheet>
+  </x:ExcelWorksheets>
+  <x:WindowHeight>6465</x:WindowHeight>
+  <x:WindowWidth>11655</x:WindowWidth>
+  <x:WindowTopX>120</x:WindowTopX>
+  <x:WindowTopY>15</x:WindowTopY>
+  <x:ProtectStructure>False</x:ProtectStructure>
+  <x:ProtectWindows>False</x:ProtectWindows>
+ </x:ExcelWorkbook>
+</xml><![endif]-->
+<TITLE>中国書リスト</TITLE>
+</head>
+<BODY class="xl24" bgcolor="#ddffdd" vlink="#990000" alink="#ffff00">
+<BLOCKQUOTE>
+<BLOCKQUOTE>
+<TABLE border="1" bgcolor="#000000">
+  <TBODY>
+    <TR>
+      <TD><I><FONT size="5" face="Lucida Sans" color="#ffff00">　Library</FONT><B><FONT size="5" face="Lucida Sans" color="#ffff00">　</FONT></B></I><FONT size="4" face="Lucida Sans" color="#ffff00">書斎</FONT><I><B><FONT size="5" face="Lucida Sans" color="#000000">。</FONT></B></I></TD>
+    </TR>
+  </TBODY>
+</TABLE>
+</BLOCKQUOTE>
+</BLOCKQUOTE>
+<BLOCKQUOTE>
+<TABLE border="1" bgcolor="#cccccc">
+  <TBODY>
+    <TR>
+      <TD bgcolor="#4a4aff" colspan="5"><FONT color="#0000cc"><FONT color="#ffffff"><BR>
+      　　　　（３）中国書リスト</FONT></FONT><BR><BR>
+      </TD>
+    </TR>
+    <TR>
+      <TD bgcolor="#ecffff"><FONT size="-1">通算</FONT></TD>
+      <TD bgcolor="#ecffff" align="center">編・著者</TD>
+      <TD bgcolor="#ecffff" align="center">書名</TD>
+      <TD bgcolor="#ecffff" align="center">出版社</TD>
+      <TD bgcolor="#ecffff" align="center">発行日</TD>
+    </TR>
+    <TR>
+      <TD align="right" bgcolor="#e1ffff">1</TD>
+      <TD bgcolor="#ffffff">西呉老蟄</TD>
+      <TD bgcolor="#ffffd2">麻雀指南</TD>
+      <TD bgcolor="#e6ffff"><FONT size="-1">上海群学社</FONT></TD>
+      <TD align="left" bgcolor="#e6ffff">1919</TD>
+    </TR>
+    <TR>
+      <TD align="right" bgcolor="#e1ffff">2</TD>
+      <TD bgcolor="#ffffff">海上老游客</TD>
+      <TD bgcolor="#ffffd2">麻雀撲克秘訣(麻雀門径)</TD>
+      <TD bgcolor="#e6ffff"><FONT size="-1">上海世界書局</FONT></TD>
+      <TD bgcolor="#e6ffff">1920・5</TD>
+    </TR>
+    <TR>
+      <TD align="right" bgcolor="#e1ffff">3</TD>
+      <TD bgcolor="#ffffff" align="center"></TD>
+      <TD bgcolor="#ffffd2">麻雀大観</TD>
+      <TD bgcolor="#e6ffff"><FONT size="-1">？</FONT></TD>
+      <TD bgcolor="#e6ffff">1920？</TD>
+    </TR>
+    <TR>
+      <TD align="right" bgcolor="#e1ffff">4</TD>
+      <TD bgcolor="#ffffff" align="center"></TD>
+      <TD bgcolor="#ffffd2">竹談規章</TD>
+      <TD bgcolor="#e6ffff"><FONT size="-1">永發祥</FONT></TD>
+      <TD bgcolor="#e6ffff">1921?</TD>
+    </TR>
+    <TR>
+      <TD align="right" bgcolor="#e1ffff">5</TD>
+      <TD bgcolor="#ffffff" align="center"></TD>
+      <TD bgcolor="#ffffd2">麻雀撲克指南</TD>
+      <TD bgcolor="#e6ffff"><FONT size="-1">宏文図書館</FONT></TD>
+      <TD bgcolor="#e6ffff">1923・01</TD>
+    </TR>
+    <TR>
+      <TD align="right" bgcolor="#e1ffff">6</TD>
+      <TD bgcolor="#ffffff" align="center"></TD>
+      <TD bgcolor="#ffffd2">麻雀必勝法</TD>
+      <TD bgcolor="#e6ffff"><FONT size="-1">？</FONT></TD>
+      <TD bgcolor="#e6ffff">1923・02</TD>
+    </TR>
+    <TR>
+      <TD align="right" bgcolor="#e1ffff">7</TD>
+      <TD bgcolor="#ffffff" align="center"></TD>
+      <TD bgcolor="#ffffd2">麻雀必勝術</TD>
+      <TD bgcolor="#e6ffff"><FONT size="-1">中華図書集成公司</FONT></TD>
+      <TD bgcolor="#e6ffff">1923・03</TD>
+    </TR>
+    <TR>
+      <TD align="right" bgcolor="#e1ffff">8</TD>
+      <TD bgcolor="#ffffff" align="center"></TD>
+      <TD bgcolor="#ffffd2">雀戦指南</TD>
+      <TD bgcolor="#e6ffff"><FONT size="-1">香港・永發祥麻雀荘</FONT></TD>
+      <TD bgcolor="#e6ffff"></TD>
+    </TR>
+    <TR>
+      <TD align="right" bgcolor="#e1ffff">9</TD>
+      <TD bgcolor="#ffffff" align="center"></TD>
+      <TD bgcolor="#ffffd2">玩牌大鑑</TD>
+      <TD bgcolor="#e6ffff"><FONT size="-1">？（麻雀牌譜と内容同じ）</FONT></TD>
+      <TD bgcolor="#e6ffff">1923・04</TD>
+    </TR>
+    <TR>
+      <TD align="right" bgcolor="#e1ffff">10</TD>
+      <TD bgcolor="#ffffff" align="center"></TD>
+      <TD bgcolor="#ffffd2">竹戦指南</TD>
+      <TD bgcolor="#e6ffff"><FONT size="-1">？（麻雀牌譜と内容同じ）</FONT></TD>
+      <TD bgcolor="#e6ffff">1923・05</TD>
+    </TR>
+    <TR>
+      <TD align="right" bgcolor="#e1ffff">11</TD>
+      <TD bgcolor="#ffffff" align="center"></TD>
+      <TD bgcolor="#ffffd2">広東麻雀牌譜</TD>
+      <TD bgcolor="#e6ffff"><FONT size="-1">？</FONT></TD>
+      <TD bgcolor="#e6ffff">1923・06</TD>
+    </TR>
+    <TR>
+      <TD align="right" bgcolor="#e1ffff">12</TD>
+      <TD bgcolor="#ffffff" align="center"></TD>
+      <TD bgcolor="#ffffd2">麻雀門径</TD>
+      <TD bgcolor="#e6ffff"><FONT size="-1">？</FONT></TD>
+      <TD bgcolor="#e6ffff"></TD>
+    </TR>
+    <TR>
+      <TD align="right" bgcolor="#e1ffff">13</TD>
+      <TD bgcolor="#ffffff" align="center"></TD>
+      <TD bgcolor="#ffffd2">麻雀牌譜</TD>
+      <TD bgcolor="#e6ffff"><FONT size="-1">上海遊芸社（求石斎書局）</FONT></TD>
+      <TD bgcolor="#e6ffff">1925・00</TD>
+    </TR>
+    <TR>
+      <TD align="right" bgcolor="#e1ffff">14</TD>
+      <TD bgcolor="#ffffff">竹林居士</TD>
+      <TD bgcolor="#ffffd2">麻雀撲克秘訣(麻雀牌譜)</TD>
+      <TD bgcolor="#e6ffff"><FONT size="-1">震華書局</FONT></TD>
+      <TD bgcolor="#e6ffff">1930・01</TD>
+    </TR>
+    <TR>
+      <TD align="right" bgcolor="#e1ffff">15</TD>
+      <TD bgcolor="#ffffff" align="center"></TD>
+      <TD bgcolor="#ffffd2">秘術一千種</TD>
+      <TD bgcolor="#e6ffff"><FONT size="-1">？</FONT></TD>
+      <TD bgcolor="#e6ffff">1930?</TD>
+    </TR>
+    <TR>
+      <TD align="right" bgcolor="#e1ffff">16</TD>
+      <TD bgcolor="#ffffff">孫雄</TD>
+      <TD bgcolor="#ffffd2">犯罪学研究</TD>
+      <TD bgcolor="#e6ffff"><FONT size="-1">中華書局</FONT></TD>
+      <TD bgcolor="#e6ffff">1939・08</TD>
+    </TR>
+    <TR>
+      <TD align="right" bgcolor="#e1ffff">17</TD>
+      <TD bgcolor="#ffffff">張普生</TD>
+      <TD bgcolor="#ffffd2">怎様打麻将</TD>
+      <TD bgcolor="#e6ffff"><FONT size="-1">安徽科学技術出版社</FONT></TD>
+      <TD bgcolor="#e6ffff">1980・00</TD>
+    </TR>
+    <TR>
+      <TD align="right" bgcolor="#e1ffff">18</TD>
+      <TD bgcolor="#ffffff">袁恩祥</TD>
+      <TD bgcolor="#ffffd2">麻将打法技巧</TD>
+      <TD bgcolor="#e6ffff"><FONT size="-1">四川省新華</FONT></TD>
+      <TD bgcolor="#e6ffff">1984・08</TD>
+    </TR>
+    <TR>
+      <TD align="right" bgcolor="#e1ffff">19</TD>
+      <TD bgcolor="#ffffff">陳洪綬</TD>
+      <TD bgcolor="#ffffd2">博古葉子</TD>
+      <TD bgcolor="#e6ffff"><FONT size="-1">四川美術出版社</FONT></TD>
+      <TD bgcolor="#e6ffff">1986・05</TD>
+    </TR>
+    <TR>
+      <TD align="right" bgcolor="#e1ffff">20</TD>
+      <TD bgcolor="#ffffff">王国華・編</TD>
+      <TD bgcolor="#ffffd2">麻将計番及技巧</TD>
+      <TD bgcolor="#e6ffff"><FONT size="-1">湖南科学技術出版社</FONT></TD>
+      <TD bgcolor="#e6ffff">1986・11</TD>
+    </TR>
+    <TR>
+      <TD align="right" bgcolor="#e1ffff">21</TD>
+      <TD bgcolor="#ffffff">文華</TD>
+      <TD bgcolor="#ffffd2">麻将牌入門</TD>
+      <TD bgcolor="#e6ffff"><FONT size="-1">黒竜江人民出版社</FONT></TD>
+      <TD bgcolor="#e6ffff">1986・12</TD>
+    </TR>
+    <TR>
+      <TD align="right" bgcolor="#e1ffff">22</TD>
+      <TD bgcolor="#ffffff">双佳・編</TD>
+      <TD bgcolor="#ffffd2">麻将技巧</TD>
+      <TD bgcolor="#e6ffff"><FONT size="-1">上海文化出版社</FONT></TD>
+      <TD bgcolor="#e6ffff">1987・04</TD>
+    </TR>
+    <TR>
+      <TD align="right" bgcolor="#e1ffff">23</TD>
+      <TD bgcolor="#ffffff">買湘</TD>
+      <TD bgcolor="#ffffd2">中国麻将牌打法</TD>
+      <TD bgcolor="#e6ffff"><FONT size="-1">吉林科学技術出版社</FONT></TD>
+      <TD bgcolor="#e6ffff">1987・01</TD>
+    </TR>
+    <TR>
+      <TD align="right" bgcolor="#e1ffff">24</TD>
+      <TD bgcolor="#ffffff">許根儒</TD>
+      <TD bgcolor="#ffffd2">麻将牌打法與技巧</TD>
+      <TD bgcolor="#e6ffff"><FONT size="-1">天津科学技術出版社</FONT></TD>
+      <TD bgcolor="#e6ffff">1987・01</TD>
+    </TR>
+    <TR>
+      <TD align="right" bgcolor="#e1ffff">25</TD>
+      <TD bgcolor="#ffffff">呉印繞</TD>
+      <TD bgcolor="#ffffd2">麻将入門</TD>
+      <TD bgcolor="#e6ffff"><FONT size="-1">遼寧科学技術出版社</FONT></TD>
+      <TD bgcolor="#e6ffff">1987・01</TD>
+    </TR>
+    <TR>
+      <TD align="right" bgcolor="#e1ffff">26</TD>
+      <TD bgcolor="#ffffff">沙舟　</TD>
+      <TD bgcolor="#ffffd2">麻将牌遊戯入門</TD>
+      <TD bgcolor="#e6ffff"><FONT size="-1">河北科学技術出版社</FONT></TD>
+      <TD bgcolor="#e6ffff">1987・03</TD>
+    </TR>
+    <TR>
+      <TD align="right" bgcolor="#e1ffff">27</TD>
+      <TD bgcolor="#ffffff">伍識鹿</TD>
+      <TD bgcolor="#ffffd2">麻将技巧</TD>
+      <TD bgcolor="#e6ffff"><FONT size="-1">湖北科学技術出版社</FONT></TD>
+      <TD bgcolor="#e6ffff">1987・03</TD>
+    </TR>
+    <TR>
+      <TD align="right" bgcolor="#e1ffff">28</TD>
+      <TD bgcolor="#ffffff">方牧凡石</TD>
+      <TD bgcolor="#ffffd2">中国牌・麻将的打法与技巧</TD>
+      <TD bgcolor="#e6ffff"><FONT size="-1">北京体育学院出版社</FONT></TD>
+      <TD bgcolor="#e6ffff">1987・05</TD>
+    </TR>
+    <TR>
+      <TD align="right" bgcolor="#e1ffff">29</TD>
+      <TD bgcolor="#ffffff">薛維宗</TD>
+      <TD bgcolor="#ffffd2">麻将：入門・実践・争勝法</TD>
+      <TD bgcolor="#e6ffff"><FONT size="-1">北京科学技術出版社</FONT></TD>
+      <TD bgcolor="#e6ffff">1987・05</TD>
+    </TR>
+    <TR>
+      <TD align="right" bgcolor="#e1ffff">30</TD>
+      <TD bgcolor="#ffffff">榮恵剣</TD>
+      <TD bgcolor="#ffffd2">麻将速成和全花祥様打法</TD>
+      <TD bgcolor="#e6ffff"><FONT size="-1">蜀蓉棋芸出版(四川)</FONT></TD>
+      <TD bgcolor="#e6ffff">1987・05</TD>
+    </TR>
+    <TR>
+      <TD align="right" bgcolor="#e1ffff">31</TD>
+      <TD bgcolor="#ffffff">梁志升</TD>
+      <TD bgcolor="#ffffd2">麻将技巧</TD>
+      <TD bgcolor="#e6ffff"><FONT size="-1">広東高等教育出版社</FONT></TD>
+      <TD bgcolor="#e6ffff">1987・05</TD>
+    </TR>
+    <TR>
+      <TD align="right" bgcolor="#e1ffff">32</TD>
+      <TD bgcolor="#ffffff">姚揚</TD>
+      <TD bgcolor="#ffffd2">怎様打麻将</TD>
+      <TD bgcolor="#e6ffff"><FONT size="-1">陜西科学技術出版社</FONT></TD>
+      <TD bgcolor="#e6ffff">1987・08</TD>
+    </TR>
+    <TR>
+      <TD align="right" bgcolor="#e1ffff">33</TD>
+      <TD bgcolor="#ffffff">呉越</TD>
+      <TD bgcolor="#ffffd2">怎様打麻将</TD>
+      <TD bgcolor="#e6ffff"><FONT size="-1">宝文堂書店(北京)</FONT></TD>
+      <TD bgcolor="#e6ffff">1987・09</TD>
+    </TR>
+    <TR>
+      <TD align="right" bgcolor="#e1ffff">34</TD>
+      <TD bgcolor="#ffffff">易維</TD>
+      <TD bgcolor="#ffffd2">新編・麻将絶招</TD>
+      <TD bgcolor="#e6ffff"><FONT size="-1">天津読物出版社</FONT></TD>
+      <TD bgcolor="#e6ffff">1987・12</TD>
+    </TR>
+    <TR>
+      <TD align="right" bgcolor="#e1ffff">35</TD>
+      <TD bgcolor="#ffffff">那崇徳</TD>
+      <TD bgcolor="#ffffd2">麻将牌通用手冊</TD>
+      <TD bgcolor="#e6ffff"><FONT size="-1">学苑出版社（北京）</FONT></TD>
+      <TD bgcolor="#e6ffff">1988・11</TD>
+    </TR>
+    <TR>
+      <TD align="right" bgcolor="#e1ffff">36</TD>
+      <TD bgcolor="#ffffff">許申玉</TD>
+      <TD bgcolor="#ffffd2">麻将技巧問答</TD>
+      <TD bgcolor="#e6ffff"><FONT size="-1">青島出版社(山東)</FONT></TD>
+      <TD bgcolor="#e6ffff">1989・06</TD>
+    </TR>
+    <TR>
+      <TD align="right" bgcolor="#e1ffff">37</TD>
+      <TD bgcolor="#ffffff">単信陽</TD>
+      <TD bgcolor="#ffffd2">麻将初歩</TD>
+      <TD bgcolor="#e6ffff"><FONT size="-1">江西人民出版社</FONT></TD>
+      <TD bgcolor="#e6ffff">1990・04</TD>
+    </TR>
+    <TR>
+      <TD align="right" bgcolor="#e1ffff">38</TD>
+      <TD bgcolor="#ffffff">沈也</TD>
+      <TD bgcolor="#ffffd2">麻将秘訣</TD>
+      <TD bgcolor="#e6ffff"><FONT size="-1">湖南文芸出版社</FONT></TD>
+      <TD bgcolor="#e6ffff">1991・02</TD>
+    </TR>
+    <TR>
+      <TD align="right" bgcolor="#e1ffff">39</TD>
+      <TD bgcolor="#ffffff">吝士</TD>
+      <TD bgcolor="#ffffd2">麻将探奇</TD>
+      <TD bgcolor="#e6ffff"><FONT size="-1">中山大学出版社</FONT></TD>
+      <TD bgcolor="#e6ffff">1992・01</TD>
+    </TR>
+    <TR>
+      <TD align="right" bgcolor="#e1ffff">40</TD>
+      <TD bgcolor="#ffffff">李金</TD>
+      <TD bgcolor="#ffffd2">麻将一周通</TD>
+      <TD bgcolor="#e6ffff"><FONT size="-1">人民体育出版社</FONT></TD>
+      <TD bgcolor="#e6ffff">1993・06</TD>
+    </TR>
+    <TR>
+      <TD align="right" bgcolor="#e1ffff">41</TD>
+      <TD bgcolor="#ffffff">周慶</TD>
+      <TD bgcolor="#ffffd2">麻将技巧大全</TD>
+      <TD bgcolor="#e6ffff"><FONT size="-1">黄山書社(安徽)</FONT></TD>
+      <TD bgcolor="#e6ffff">1993・10</TD>
+    </TR>
+    <TR>
+      <TD align="right" bgcolor="#e1ffff">42</TD>
+      <TD bgcolor="#ffffff">張飛</TD>
+      <TD bgcolor="#ffffd2">最新麻将取勝技巧大全</TD>
+      <TD bgcolor="#e6ffff"><FONT size="-1">中国人事出版社</FONT></TD>
+      <TD bgcolor="#e6ffff">1993・10</TD>
+    </TR>
+    <TR>
+      <TD align="right" bgcolor="#e1ffff">43</TD>
+      <TD bgcolor="#ffffff">朱自欣</TD>
+      <TD bgcolor="#ffffd2">麻将牌奪魁技巧</TD>
+      <TD bgcolor="#e6ffff"><FONT size="-1">海南撮影美術出版</FONT></TD>
+      <TD bgcolor="#e6ffff">1993・10</TD>
+    </TR>
+    <TR>
+      <TD align="right" bgcolor="#e1ffff">44</TD>
+      <TD bgcolor="#ffffff">周慶</TD>
+      <TD bgcolor="#ffffd2">麻将・高級技巧與破解</TD>
+      <TD bgcolor="#e6ffff"><FONT size="-1">黄山書社(安徽)</FONT></TD>
+      <TD bgcolor="#e6ffff">1994・01</TD>
+    </TR>
+    <TR>
+      <TD align="right" bgcolor="#e1ffff">45</TD>
+      <TD bgcolor="#ffffff">赫仁</TD>
+      <TD bgcolor="#ffffd2">麻将常勝秘訣</TD>
+      <TD bgcolor="#e6ffff"><FONT size="-1">四川科学技術出版社「</FONT></TD>
+      <TD bgcolor="#e6ffff">1994・11</TD>
+    </TR>
+    <TR>
+      <TD align="right" bgcolor="#e1ffff">46</TD>
+      <TD bgcolor="#ffffff">連庄</TD>
+      <TD bgcolor="#ffffd2">麻将精述</TD>
+      <TD bgcolor="#e6ffff"><FONT size="-1">広東人民出版社</FONT></TD>
+      <TD bgcolor="#e6ffff">1994・12</TD>
+    </TR>
+    <TR>
+      <TD align="right" bgcolor="#e1ffff">47</TD>
+      <TD bgcolor="#ffffff">蘇克明</TD>
+      <TD bgcolor="#ffffd2">麻将実践範例</TD>
+      <TD bgcolor="#e6ffff"><FONT size="-1">蜀蓉棋芸出版(四川)</FONT></TD>
+      <TD bgcolor="#e6ffff">1995・10</TD>
+    </TR>
+    <TR>
+      <TD align="right" bgcolor="#e1ffff">48</TD>
+      <TD bgcolor="#ffffff">盛埼</TD>
+      <TD bgcolor="#ffffd2">麻将運動</TD>
+      <TD bgcolor="#e6ffff"><FONT size="-1">天津人民出版社</FONT></TD>
+      <TD bgcolor="#e6ffff">1996・03</TD>
+    </TR>
+    <TR>
+      <TD align="right" bgcolor="#e1ffff">49</TD>
+      <TD bgcolor="#ffffff">魯嘉</TD>
+      <TD bgcolor="#ffffd2">麻将大全</TD>
+      <TD bgcolor="#e6ffff"><FONT size="-1">人民体育出版社</FONT></TD>
+      <TD bgcolor="#e6ffff">1996・04</TD>
+    </TR>
+    <TR>
+      <TD align="right" bgcolor="#e1ffff">50</TD>
+      <TD bgcolor="#ffffff">馬浄</TD>
+      <TD bgcolor="#ffffd2">原則打法及霊活打法</TD>
+      <TD bgcolor="#e6ffff"><FONT size="-1">中国建材工業出版社</FONT></TD>
+      <TD bgcolor="#e6ffff">1996・09</TD>
+    </TR>
+    <TR>
+      <TD align="right" bgcolor="#e1ffff">51</TD>
+      <TD bgcolor="#ffffff">張新亭</TD>
+      <TD bgcolor="#ffffd2">麻将実践技巧</TD>
+      <TD bgcolor="#e6ffff"><FONT size="-1">農村読物出版社（北京）</FONT></TD>
+      <TD bgcolor="#e6ffff">1996・10</TD>
+    </TR>
+    <TR>
+      <TD align="right" bgcolor="#e1ffff">52</TD>
+      <TD bgcolor="#ffffff">穀飛</TD>
+      <TD bgcolor="#ffffd2">麻将玩技</TD>
+      <TD bgcolor="#e6ffff"><FONT size="-1">中国広播電視出版社</FONT></TD>
+      <TD bgcolor="#e6ffff">1996・12</TD>
+    </TR>
+    <TR>
+      <TD align="right" bgcolor="#e1ffff">53</TD>
+      <TD bgcolor="#ffffff">張徳鵬</TD>
+      <TD bgcolor="#ffffd2">麻将秘笈</TD>
+      <TD bgcolor="#e6ffff"><FONT size="-1">山東高校連合出版社</FONT></TD>
+      <TD bgcolor="#e6ffff">1997・00</TD>
+    </TR>
+    <TR>
+      <TD align="right" bgcolor="#e1ffff">54</TD>
+      <TD bgcolor="#ffffff">魯嘉</TD>
+      <TD bgcolor="#ffffd2">麻将読本</TD>
+      <TD bgcolor="#e6ffff"><FONT size="-1">人民体育出版社</FONT></TD>
+      <TD bgcolor="#e6ffff">1997・01</TD>
+    </TR>
+    <TR>
+      <TD align="right" bgcolor="#e1ffff">55</TD>
+      <TD bgcolor="#ffffff">許憲隆</TD>
+      <TD bgcolor="#ffffd2">麻将ー修養與娯楽</TD>
+      <TD bgcolor="#e6ffff"><FONT size="-1">長河文芸出版社</FONT></TD>
+      <TD bgcolor="#e6ffff">1997・07</TD>
+    </TR>
+    <TR>
+      <TD align="right" bgcolor="#e1ffff">56</TD>
+      <TD bgcolor="#ffffff">居士楽・編</TD>
+      <TD bgcolor="#ffffd2">図解・中国麻将経(入門編)</TD>
+      <TD bgcolor="#e6ffff"><FONT size="-1">華齢出版社</FONT></TD>
+      <TD bgcolor="#e6ffff">1998・05</TD>
+    </TR>
+    <TR>
+      <TD align="right" bgcolor="#e1ffff">57</TD>
+      <TD bgcolor="#ffffff">居士楽・編</TD>
+      <TD bgcolor="#ffffd2">図解・中国麻将経(絶勝編)</TD>
+      <TD bgcolor="#e6ffff"><FONT size="-1">華齢出版社</FONT></TD>
+      <TD bgcolor="#e6ffff">1998・05</TD>
+    </TR>
+    <TR>
+      <TD align="right" bgcolor="#e1ffff">58</TD>
+      <TD bgcolor="#ffffff">李志順</TD>
+      <TD bgcolor="#ffffd2">最新流行麻将戦術</TD>
+      <TD bgcolor="#e6ffff"><FONT size="-1">人民体育出版社</FONT></TD>
+      <TD bgcolor="#e6ffff">1998・10</TD>
+    </TR>
+    <TR>
+      <TD align="right" bgcolor="#e1ffff">59</TD>
+      <TD bgcolor="#ffffff"></TD>
+      <TD bgcolor="#ffffd2">民間秘術大全</TD>
+      <TD bgcolor="#e6ffff"><FONT size="-1">中国商業出版</FONT></TD>
+      <TD bgcolor="#e6ffff">1998？</TD>
+    </TR>
+    <TR>
+      <TD align="right" bgcolor="#e1ffff">60</TD>
+      <TD bgcolor="#ffffff"></TD>
+      <TD bgcolor="#ffffd2">麻将詭秘戦法</TD>
+      <TD bgcolor="#e6ffff"></TD>
+      <TD bgcolor="#e6ffff">1998？</TD>
+    </TR>
+    <TR>
+      <TD align="right" bgcolor="#e1ffff">61</TD>
+      <TD bgcolor="#ffffff">康友誼</TD>
+      <TD bgcolor="#ffffd2">麻将技巧大全</TD>
+      <TD bgcolor="#e6ffff"><FONT size="-1">？</FONT></TD>
+      <TD bgcolor="#e6ffff">1998？</TD>
+    </TR>
+    <TR>
+      <TD align="right" bgcolor="#e1ffff">62</TD>
+      <TD bgcolor="#ffffff"></TD>
+      <TD bgcolor="#ffffd2">麻将制勝戦略与技巧</TD>
+      <TD bgcolor="#e6ffff"><FONT size="-1">山西高校聯合出版</FONT></TD>
+      <TD bgcolor="#e6ffff">1998？</TD>
+    </TR>
+    <TR>
+      <TD align="right" bgcolor="#e1ffff">63</TD>
+      <TD bgcolor="#ffffff">蜀俊揚</TD>
+      <TD bgcolor="#ffffd2">麻将的技法</TD>
+      <TD bgcolor="#e6ffff"></TD>
+      <TD bgcolor="#e6ffff">1998？</TD>
+    </TR>
+    <TR>
+      <TD align="right" bgcolor="#e1ffff">64</TD>
+      <TD bgcolor="#ffffff">劉炳超</TD>
+      <TD bgcolor="#ffffd2">五花入門(麻将牌娯楽法)</TD>
+      <TD bgcolor="#e6ffff"><FONT size="-1">中国文聯出版公司</FONT></TD>
+      <TD bgcolor="#e6ffff">1998？</TD>
+    </TR>
+    <TR>
+      <TD align="right" bgcolor="#e1ffff">65</TD>
+      <TD bgcolor="#ffffff">盛埼</TD>
+      <TD bgcolor="#ffffd2">麻将学</TD>
+      <TD bgcolor="#e6ffff"><FONT size="-1">同心出版社</FONT></TD>
+      <TD bgcolor="#e6ffff">1999・01</TD>
+    </TR>
+    <TR>
+      <TD align="right" bgcolor="#e1ffff">66</TD>
+      <TD bgcolor="#ffffff">王成槐・編</TD>
+      <TD bgcolor="#ffffd2">麻将牌初級通用教程</TD>
+      <TD bgcolor="#e6ffff"><FONT size="-1">人民体育出版社</FONT></TD>
+      <TD bgcolor="#e6ffff">1999・01</TD>
+    </TR>
+    <TR>
+      <TD align="right" bgcolor="#e1ffff">67</TD>
+      <TD bgcolor="#ffffff">范孫操・編</TD>
+      <TD bgcolor="#ffffd2">麻将贏牌技巧問答</TD>
+      <TD bgcolor="#e6ffff"><FONT size="-1">人民体育出版社</FONT></TD>
+      <TD bgcolor="#e6ffff">1999・03</TD>
+    </TR>
+    <TR>
+      <TD align="right" bgcolor="#e1ffff">68</TD>
+      <TD bgcolor="#ffffff">金甲・金威</TD>
+      <TD bgcolor="#ffffd2">簡易麻将技法</TD>
+      <TD bgcolor="#e6ffff"><FONT size="-1">人民体育出版社</FONT></TD>
+      <TD bgcolor="#e6ffff">1999・03</TD>
+    </TR>
+    <TR>
+      <TD align="right" bgcolor="#e1ffff">69</TD>
+      <TD bgcolor="#ffffff">左天　編</TD>
+      <TD bgcolor="#ffffd2">麻将実戦</TD>
+      <TD bgcolor="#e6ffff"><FONT size="-1">人民体育出版社</FONT></TD>
+      <TD bgcolor="#e6ffff">1999・11</TD>
+    </TR>
+    <TR>
+      <TD align="right" bgcolor="#e1ffff">70</TD>
+      <TD bgcolor="#ffffff">印佳翔　編</TD>
+      <TD bgcolor="#ffffd2">中国麻将</TD>
+      <TD bgcolor="#e6ffff"><FONT size="-1">河南科学技術出版社</FONT></TD>
+      <TD bgcolor="#e6ffff">1999・5</TD>
+    </TR>
+  </TBODY>
+</TABLE>
+</BLOCKQUOTE>
+<P align="center"><FONT color="#0000cc"><A href="lib2.html">以前へ</A>　<A href="lib4.html">以降へ</A></FONT>　<FONT color="#0000cc"><A href="LIBRARY.html">目次へ</A></FONT></P>
+</BODY>
+</html>

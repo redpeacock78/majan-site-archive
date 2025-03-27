@@ -1,0 +1,354 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+<META name="GENERATOR" content="IBM HomePage Builder 2001 V5.0.3 for Windows">
+<META http-equiv="Content-Type" content="text/html; charset=Shift_JIS">
+<META http-equiv="Content-Style-Type" content="text/css">
+<TITLE>麻雀点数論２</TITLE>
+</HEAD>
+<BODY bgcolor="#e1ffe1" vlink="#cc0000" alink="#ffff00">
+<BLOCKQUOTE>
+<BLOCKQUOTE>
+<TABLE border="1" bgcolor="#000000">
+  <TBODY>
+    <TR>
+      <TD bgcolor="#000000"><FONT size="+2" color="#ffff00"><I>Ｔreatis</I></FONT><FONT size="+1" color="#ffff00">　論考</FONT>。</TD>
+    </TR>
+  </TBODY>
+</TABLE>
+</BLOCKQUOTE>
+</BLOCKQUOTE>
+<BLOCKQUOTE>
+<BLOCKQUOTE>
+<TABLE border="1" bgcolor="#cccc00">
+  <TBODY>
+    <TR>
+      <TD bgcolor="#8080ff"><FONT color="#ffffff" size="+1"><BR>
+      　　　　（１１）麻雀点数論　２<BR>
+      <BR>
+      </FONT></TD>
+    </TR>
+    <TR>
+      <TD bgcolor="#ffffd7">
+      <BLOCKQUOTE><BR>
+      <B>第 ２ 章　面子小符</B><BR>
+      　次表は中国古典麻雀で用いられていた小符で、現在、日本でも主流で使用されている小符表である。<BR>
+      <BR>
+      <B>表１　面子小符表(小算法)</B>
+      <TABLE border="1" bgcolor="#cccc00">
+        <TBODY>
+          <TR>
+            <TD bgcolor="#d7ffff">構成</TD>
+            <TD bgcolor="#d7ffff">中張牌</TD>
+            <TD bgcolor="#d7ffff">一九牌</TD>
+            <TD bgcolor="#d7ffff">無翻牌</TD>
+            <TD bgcolor="#d7ffff">一翻牌</TD>
+          </TR>
+          <TR>
+            <TD bgcolor="#d2ffff">対子</TD>
+            <TD bgcolor="#ffffff">０</TD>
+            <TD bgcolor="#ffffff">０</TD>
+            <TD bgcolor="#ffffff">０</TD>
+            <TD bgcolor="#ffffff">２</TD>
+          </TR>
+          <TR>
+            <TD bgcolor="#d2ffff">明刻</TD>
+            <TD bgcolor="#ffffff">２</TD>
+            <TD bgcolor="#ffffff">４</TD>
+            <TD bgcolor="#ffffff">４</TD>
+            <TD bgcolor="#ffffff">４</TD>
+          </TR>
+          <TR>
+            <TD bgcolor="#d2ffff">暗刻</TD>
+            <TD bgcolor="#ffffff">４</TD>
+            <TD bgcolor="#ffffff">８</TD>
+            <TD bgcolor="#ffffff">８</TD>
+            <TD bgcolor="#ffffff">８</TD>
+          </TR>
+          <TR>
+            <TD bgcolor="#d2ffff">明槓</TD>
+            <TD bgcolor="#ffffff">８</TD>
+            <TD bgcolor="#ffffff">１６</TD>
+            <TD bgcolor="#ffffff">１６</TD>
+            <TD bgcolor="#ffffff">１６</TD>
+          </TR>
+          <TR>
+            <TD bgcolor="#d2ffff">暗槓</TD>
+            <TD bgcolor="#ffffff">１６</TD>
+            <TD bgcolor="#ffffff">３２</TD>
+            <TD bgcolor="#ffffff">３２</TD>
+            <TD bgcolor="#ffffff">３２</TD>
+          </TR>
+        </TBODY>
+      </TABLE>
+      <BR>
+      　当時はまだ門風(自風)だけで、圏風(場風)は存在しなかった。圏風(場風)がなければ連風牌に対する符の問題も生じない。また順子は、暗順子・明順子に拘らず常に０点である。これは麻雀というゲームの生い立ちに由来する。<BR>
+      <BR>
+      　紙牌麻雀の時代（数牌のみで字牌のない時代）、デュプリケーション(同種牌の枚数)も少なく、現在の３枚一組の刻子を作ることは不可能であった。そして筒子は貨幣、索子はその貨幣に紐を通して一束にしたもの、万子はその金高を表したものであり、その筒子/索子/万子のワンセットが組み合わせの一単位であった。<BR>
+      <BR>
+      　このたとえば一萬/一筒/一索という組み合わせを連子(レンツ)と呼ぶ<FONT color="#ff0000">*9</FONT>。しかし麻雀が骨牌ゲームと融合するとともにデュプリケーションが増大し（現在の各牌４枚型）、刻子を作ることが可能になり、それが主流となるとともに連子は消滅した<FONT color="#ff0000">*10</FONT>。<BR>
+      <BR>
+      <FONT color="#ff0000">*9</FONT><FONT color="#000099">：原 正風「郭雲亭に会ふの記」林茂光麻雀研究所機関誌「麻雀」Ｓ6/4月号<BR>
+      </FONT><FONT color="#ff0000">*10</FONT><FONT color="#000099">：現在でも中国北方麻雀の一部に連子を採用したルールが存在する。<BR>
+      </FONT><BR>
+      　しかしもともと麻雀が連子を基本面子としたゲームである以上、この時代から順子は脇役であった。この状況は主役が連子から刻子に移ってもから変わることはなかった。そこで順子には暗順子・明順子という区別もなく、小符を得ることもなく今日に至っている<FONT color="#ff0000">*11</FONT>。<BR>
+      <BR>
+      <FONT color="#ff0000">*11</FONT><FONT color="#000099">：その性格は門前清が重視される現代麻雀にも受けつがれ、現代麻雀でも放　銃牌により完成した順子も暗順子と扱われる。<BR>
+      </FONT><BR>
+      　清(チン)麻雀<FONT color="#ff0000">*12</FONT>成立以来、この表に基づいて計算されていたが、1900年初頭（明治末期〜大正初期）、場風が採用されるに及んで問題が生じた。<BR>
+      <BR>
+      <FONT color="#ff0000">*12</FONT><FONT color="#000099">：花牌を使用しない麻雀の意。今日の中共では、素麻将（すマージャン）と称されている。<BR>
+      </FONT><BR>
+      　場風が採用されれば、自動的に連風牌が発生する。その連風牌の対子符をどう扱うかという事が問題になったのである。そしてやがて中国在住の日本人を中心にした麻雀愛好家の中で、次のような小符表が採用され始めた。
+      <BLOCKQUOTE>
+<BLOCKQUOTE>
+<BLOCKQUOTE><B>表２　面子小符表（中算法）</B><BR>
+      <TABLE border="1" bgcolor="#cccc00">
+  <TBODY>
+    <TR>
+            <TD bgcolor="#b9ffff">構成</TD>
+            <TD bgcolor="#b9ffff">中張牌</TD>
+            <TD bgcolor="#b9ffff">一九牌</TD>
+            <TD bgcolor="#b9ffff">無翻牌</TD>
+            <TD bgcolor="#b9ffff">一翻牌</TD>
+            <TD bgcolor="#b9ffff">連風牌</TD>
+          </TR>
+    <TR>
+            <TD bgcolor="#c8ffff">対子</TD>
+            <TD bgcolor="#ffffff">０</TD>
+      <TD bgcolor="#ffffff">０</TD>
+      <TD bgcolor="#ffffff">０</TD>
+      <TD bgcolor="#ffffff">２</TD>
+      <TD bgcolor="#ffffff">４</TD>
+    </TR>
+    <TR>
+            <TD bgcolor="#c8ffff">明刻</TD>
+            <TD bgcolor="#ffffff">２</TD>
+      <TD bgcolor="#ffffff">４</TD>
+      <TD bgcolor="#ffffff">４</TD>
+      <TD bgcolor="#ffffff">４</TD>
+      <TD bgcolor="#ffffff">４</TD>
+    </TR>
+    <TR>
+            <TD bgcolor="#c8ffff">暗刻</TD>
+            <TD bgcolor="#ffffff">４</TD>
+      <TD bgcolor="#ffffff">８</TD>
+      <TD bgcolor="#ffffff">８</TD>
+      <TD bgcolor="#ffffff">８</TD>
+      <TD bgcolor="#ffffff">８</TD>
+    </TR>
+    <TR>
+            <TD bgcolor="#c8ffff">明槓</TD>
+            <TD bgcolor="#ffffff">８</TD>
+      <TD bgcolor="#ffffff">１６</TD>
+      <TD bgcolor="#ffffff">１６</TD>
+      <TD bgcolor="#ffffff">１６</TD>
+      <TD bgcolor="#ffffff">１６</TD>
+    </TR>
+    <TR>
+            <TD bgcolor="#c8ffff">暗槓</TD>
+            <TD bgcolor="#ffffff">１６</TD>
+      <TD bgcolor="#ffffff">３２</TD>
+      <TD bgcolor="#ffffff">３２</TD>
+      <TD bgcolor="#ffffff">３２</TD>
+      <TD bgcolor="#ffffff">３２</TD>
+    </TR>
+  </TBODY>
+</TABLE>
+      </BLOCKQUOTE>
+</BLOCKQUOTE>
+</BLOCKQUOTE>
+      　連風牌の対子だけ４符になっている他は表１に同じである。これは「一翻牌の対子が２符なら、連風牌の対子は４符であるべきだ」という理由に基づいている。<BR>
+      　これに対し、榛原茂樹氏を中心にした歴史学派と呼ばれるグループより「麻雀の計算は倍々勘定が基本である。したがって『連風牌の対子は４符、刻子・槓子は一翻牌も連風牌も同じ』という方式は変則である。もし連風牌の対子を４符にするなら、下記のように連風牌の暗刻子は16符、暗槓子は64符でなければならない」<BR>
+      <BR>
+      <B>表３　面子小符表（大算法）</B><BR>
+      <TABLE border="1" bgcolor="#cccc00">
+        <TBODY>
+          <TR>
+            <TD bgcolor="#d9ffff">構成</TD>
+            <TD bgcolor="#d9ffff">中張牌</TD>
+            <TD bgcolor="#d9ffff">一九牌</TD>
+            <TD bgcolor="#d9ffff">無翻牌</TD>
+            <TD bgcolor="#d9ffff">一翻牌</TD>
+            <TD bgcolor="#d9ffff">連風牌</TD>
+          </TR>
+          <TR>
+            <TD bgcolor="#d7ffff">対子</TD>
+            <TD bgcolor="#ffffff">０</TD>
+            <TD bgcolor="#ffffff">０</TD>
+            <TD bgcolor="#ffffff">０</TD>
+            <TD bgcolor="#ffffff">２</TD>
+            <TD bgcolor="#ffffff">４</TD>
+          </TR>
+          <TR>
+            <TD bgcolor="#d7ffff">明刻</TD>
+            <TD bgcolor="#ffffff">２</TD>
+            <TD bgcolor="#ffffff">４</TD>
+            <TD bgcolor="#ffffff">４</TD>
+            <TD bgcolor="#ffffff">４</TD>
+            <TD bgcolor="#ffffff">４</TD>
+          </TR>
+          <TR>
+            <TD bgcolor="#d7ffff">暗刻</TD>
+            <TD bgcolor="#ffffff">４</TD>
+            <TD bgcolor="#ffffff">８</TD>
+            <TD bgcolor="#ffffff">８</TD>
+            <TD bgcolor="#ffffff">８</TD>
+            <TD bgcolor="#ffffff">８</TD>
+          </TR>
+          <TR>
+            <TD bgcolor="#d7ffff">明槓</TD>
+            <TD bgcolor="#ffffff">８</TD>
+            <TD bgcolor="#ffffff">１６</TD>
+            <TD bgcolor="#ffffff">１６</TD>
+            <TD bgcolor="#ffffff">１６</TD>
+            <TD bgcolor="#ffffff">１６</TD>
+          </TR>
+          <TR>
+            <TD bgcolor="#d7ffff">暗槓</TD>
+            <TD bgcolor="#ffffff">１６</TD>
+            <TD bgcolor="#ffffff">３２</TD>
+            <TD bgcolor="#ffffff">３２</TD>
+            <TD bgcolor="#ffffff">３２</TD>
+            <TD bgcolor="#ffffff">６４</TD>
+          </TR>
+        </TBODY>
+      </TABLE>
+      <BR>
+      　「これを大算法とするならば、今までの方式（表１）は小算法と言う事になる。そこで大算法と小算法を比べてみると、大算法では符が大きすぎて点数のバランスが大きく崩れる。となれば小符は小算法を採用すべきである」という反論がなされたのである。この主張は大方に受け入れられ、現在に至るまで日本麻雀では小算法が主流として採用されている。しかし中算法も平行的に採用され、
+今日に至っている。<BR>
+      <BR>
+      　しかし実は榛原氏から「変則」と評された中算法は、その論理性で小算法や大算法よりまさっている。確かに麻雀の点数計算は、倍々勘定が基本となっている。しかしその基本は、小符ではなく実点の段階で求められるべきものだからである。<BR>
+      <BR>
+      　翻牌は刻子になると一翻、すなわち小符を２倍にする事ができる。そこで一九牌と翻牌は、見かけは同点でも実点では２倍の差が生じる。ところが翻牌であっても、対子では倍額計算することはできない。そこで小算法では小符の段階で倍額とし、全体的なバランスをとっている。<BR>
+      <BR>
+      　これは槓子の符にしても同様で、一翻牌が槓子になったからといって倍々計算を２回行うわけにゆかない。そこで小算法でも小符の段階で刻子の倍額としてある。すなわち連風牌と一翻牌が同じ面子小符であれば、刻子・槓子の実点は倍額の差があっても、対子における実点は同点ということになるのである。となれば小算法こそ倍々勘定の基本から外れるという事になる。<BR>
+      <BR>
+      <B>表４　面子小符実点表（小算法）</B><BR>
+      <TABLE border="1" bgcolor="#cccc00">
+        <TBODY>
+          <TR>
+            <TD bgcolor="#d7ffff">構成</TD>
+            <TD bgcolor="#d7ffff">中張牌</TD>
+            <TD bgcolor="#d7ffff">一九牌</TD>
+            <TD bgcolor="#d7ffff">無翻牌</TD>
+            <TD bgcolor="#d7ffff">一翻牌</TD>
+            <TD bgcolor="#d7ffff">連風牌</TD>
+          </TR>
+          <TR>
+            <TD bgcolor="#d9ffff">対子</TD>
+            <TD bgcolor="#ffffff">０</TD>
+            <TD bgcolor="#ffffff">０</TD>
+            <TD bgcolor="#ffffff">０</TD>
+            <TD bgcolor="#ffffff">２</TD>
+            <TD bgcolor="#ffffff">２</TD>
+          </TR>
+          <TR>
+            <TD bgcolor="#d9ffff">明刻</TD>
+            <TD bgcolor="#ffffff">２</TD>
+            <TD bgcolor="#ffffff">４</TD>
+            <TD bgcolor="#ffffff">４</TD>
+            <TD bgcolor="#ffffff">８</TD>
+            <TD bgcolor="#ffffff">１６</TD>
+          </TR>
+          <TR>
+            <TD bgcolor="#d9ffff">暗刻</TD>
+            <TD bgcolor="#ffffff">４</TD>
+            <TD bgcolor="#ffffff">８</TD>
+            <TD bgcolor="#ffffff">８</TD>
+            <TD bgcolor="#ffffff">１６</TD>
+            <TD bgcolor="#ffffff">３２</TD>
+          </TR>
+          <TR>
+            <TD bgcolor="#d9ffff">明槓</TD>
+            <TD bgcolor="#ffffff">８</TD>
+            <TD bgcolor="#ffffff">１６</TD>
+            <TD bgcolor="#ffffff">１６</TD>
+            <TD bgcolor="#ffffff">３２</TD>
+            <TD bgcolor="#ffffff">６４</TD>
+          </TR>
+          <TR>
+            <TD bgcolor="#d9ffff">暗槓</TD>
+            <TD bgcolor="#ffffff">１６</TD>
+            <TD bgcolor="#ffffff">３２</TD>
+            <TD bgcolor="#ffffff">３２</TD>
+            <TD bgcolor="#ffffff">６４</TD>
+            <TD bgcolor="#ffffff">１２８</TD>
+          </TR>
+        </TBODY>
+      </TABLE>
+      <BR>
+      　表４の通り、刻子/槓子ではきれいに倍々数字が並んでいるのに、対子部分だけ同数字となっている。これに対し中算法では、下記のようにすべてきれいに倍々数字となる。<BR>
+      <BR>
+      <B>表５　面子小符実点表（中算法）</B>
+      <TABLE border="1" bgcolor="#cccc00">
+        <TBODY>
+          <TR>
+            <TD bgcolor="#d7ffff">構成</TD>
+            <TD bgcolor="#d7ffff">中張牌</TD>
+            <TD bgcolor="#d7ffff">一九牌</TD>
+            <TD bgcolor="#d7ffff">無翻牌</TD>
+            <TD bgcolor="#d7ffff">一翻牌</TD>
+            <TD bgcolor="#d7ffff">連風牌</TD>
+          </TR>
+          <TR>
+            <TD bgcolor="#d7ffff">対子</TD>
+            <TD bgcolor="#ffffff">０</TD>
+            <TD bgcolor="#ffffff">０</TD>
+            <TD bgcolor="#ffffff">０</TD>
+            <TD bgcolor="#ffffff">２</TD>
+            <TD bgcolor="#ffffff">４</TD>
+          </TR>
+          <TR>
+            <TD bgcolor="#d7ffff">明刻</TD>
+            <TD bgcolor="#ffffff">２</TD>
+            <TD bgcolor="#ffffff">４</TD>
+            <TD bgcolor="#ffffff">４</TD>
+            <TD bgcolor="#ffffff">８</TD>
+            <TD bgcolor="#ffffff">１６</TD>
+          </TR>
+          <TR>
+            <TD bgcolor="#d7ffff">暗刻</TD>
+            <TD bgcolor="#ffffff">４</TD>
+            <TD bgcolor="#ffffff">８</TD>
+            <TD bgcolor="#ffffff">８</TD>
+            <TD bgcolor="#ffffff">１６</TD>
+            <TD bgcolor="#ffffff">３２</TD>
+          </TR>
+          <TR>
+            <TD bgcolor="#d7ffff">明槓</TD>
+            <TD bgcolor="#ffffff">８</TD>
+            <TD bgcolor="#ffffff">１６</TD>
+            <TD bgcolor="#ffffff">１６</TD>
+            <TD bgcolor="#ffffff">３２</TD>
+            <TD bgcolor="#ffffff">６４</TD>
+          </TR>
+          <TR>
+            <TD bgcolor="#d7ffff">暗槓</TD>
+            <TD bgcolor="#ffffff">１６</TD>
+            <TD bgcolor="#ffffff">３２</TD>
+            <TD bgcolor="#ffffff">３２</TD>
+            <TD bgcolor="#ffffff">６４</TD>
+            <TD bgcolor="#ffffff">１２８</TD>
+          </TR>
+        </TBODY>
+      </TABLE>
+      <BR>
+      　それが小符の段階で、刻子・槓子に大きく点差をつけてある大算法では、倍々勘定などどこかへふっ飛んでしまう結果となる。<BR>
+      <BR>
+      　しかし歴史学派が中算法に反対したのは、単に「連風牌対子を４符にするなら、連風の刻子・槓子も32・64にすべき」という理由ではなく、連風牌（すなわち場風）の存在そのものに反対であった事も一因ではないかと思われる。<BR>
+      <BR>
+      　すなわち古典麻雀では和了役が極めて少なく一翻といえど取得するのは困難であった。そのような麻雀では、たった３枚で両翻という連風牌は現在のドラ暗刻並のパワーがあった。そのパワーが一人の競技者にしか有効でないという点が、１局の中におけるプレーヤーのパワーバランスに歪みが生じるので反対という主旨である。<BR>
+      <BR>
+      　この反論の主旨はともかく、いずれにせよ数理だけで論ずれば中算法がもっとも論理的であるといえる。しかし論理は論理として、日本麻雀では現在も中算法より小算法が主流で普及している。<BR>
+      <BR>
+      </BLOCKQUOTE>
+      </TD>
+    </TR>
+  </TBODY>
+</TABLE>
+</BLOCKQUOTE>
+</BLOCKQUOTE>
+<P align="center"><A href="tre10.html">以前へ</A>　　<A href="tre12.html">以降へ</A>　　<A href="TREATIS.html">目次へ</A></P>
+</BODY>
+</HTML>

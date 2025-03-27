@@ -1,0 +1,134 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+<HEAD>
+<META name="GENERATOR" content="IBM HomePage Builder 2001 V5.0.4 for Windows">
+<META http-equiv="Content-Type" content="text/html; charset=Shift_JIS">
+<META http-equiv="Content-Style-Type" content="text/css">
+<TITLE>C計算法</TITLE>
+</HEAD>
+<BODY bgcolor="#ceffce" vlink="#cc0000" alink="#ffff00">
+<BLOCKQUOTE>
+<BLOCKQUOTE>
+<TABLE border="1" bgcolor="#000000">
+  <TBODY>
+    <TR>
+      <TD><FONT color="#ffff00"><I><FONT size="+3">　</FONT></I></FONT><FONT color="#ffff00" size="-1"><I><FONT size="+2"><FONT color="#ffff00" size="-1"><FONT size="+2">Guest </FONT></FONT><FONT color="#ffff00"><FONT size="6" face="Lucida Sans"><FONT color="#ffff00"><FONT size="+3"><FONT color="#ffff00" size="+2">Laboratory</FONT></FONT></FONT></FONT></FONT><B><FONT color="#ffff00"><FONT size="6" face="Lucida Sans"><FONT color="#ffff00"><FONT size="+3"><FONT color="#ffff00">　</FONT></FONT></FONT></FONT></FONT></B></FONT></I><FONT size="+2"><FONT color="#ffff00"><FONT size="6" face="Lucida Sans"><FONT color="#ffff00"><FONT size="+1">ゲスト</FONT></FONT></FONT></FONT></FONT></FONT><FONT color="#ffff00">研究室<I>　</I></FONT><FONT color="#000000"><FONT color="#000000"><I>。<BR>
+      <BR>
+      </I></FONT></FONT></TD>
+    </TR>
+  </TBODY>
+</TABLE>
+</BLOCKQUOTE>
+</BLOCKQUOTE>
+<BLOCKQUOTE>
+<BLOCKQUOTE>
+<TABLE border="1" bgcolor="#cccccc">
+  <TBODY>
+    <TR>
+      <TD bgcolor="#8080ff"><FONT color="#ffffff"><BR>
+      　　　　　（１9）C計算法<BR>
+      <BR>
+      </FONT></TD>
+    </TR>
+    <TR>
+      <TD bgcolor="#d9ffff">
+      <BLOCKQUOTE><BR>
+      <FONT color="#cc0000">最近 麻雀 始めました！</FONT>投稿日：2008/07/05(Sat)<BR>
+      <BR>
+      だいぶ前に出ていた話ですが、90符と110符と ついでに70符の簡単？な求め方を考えました！<BR>
+      <BR>50符の翻計算は全て切り上げがないので、<BR>50符Ｘ翻+△符Ｘ翻＝（50+△）符Ｘ翻<BR>が切り上げ時の誤差が出ずに成り立ちます。<BR>
+      <BR>したがって<BR>50符Ｘ翻+20符Ｘ翻＝70符Ｘ翻<BR>50符Ｘ翻+40符Ｘ翻＝90符Ｘ翻<BR>50符Ｘ翻+60符Ｘ翻＝110符Ｘ翻<BR>も成り立ちます。<BR>
+      <BR>（例）親ロンの時<BR>50符2翻（4800）+20符2翻（2000）＝70符2翻（6800）<BR>50符2翻（4800）+40符2翻（3900）＝90符2翻（8700）<BR>50符2翻（4800）+60符2翻（5800）＝110符2翻（10600）<BR>
+      <BR>これで20符・30符・50符覚えておけば簡単な足し算だけで乗り切れます。<BR>
+      （全部暗記した方が実践向きかもしれませんが・・・）<BR>
+      </BLOCKQUOTE>
+      </TD>
+    </TR>
+    <TR>
+      <TD bgcolor="#ddffdd">
+      <BLOCKQUOTE><BR>
+      <FONT size="+1" color="#cc0000">百貫雀</FONT> 投稿日：2008/07/06(Sun) <BR>
+      <BR>最近麻雀始めました！！さん、はじめまして。<BR>
+      <BR>
+      <FONT color="#990000">&gt; 50符の翻計算は全て切り上げがないので、...<BR>
+      </FONT><BR>これはすばらしい！<BR>
+      麻雀始めて３０年も経つのに、気づかなかった。<BR>
+      </BLOCKQUOTE>
+      </TD>
+    </TR>
+    <TR>
+      <TD bgcolor="#ffffca">
+      <BLOCKQUOTE><BR>
+      あさみ　投稿日：2008/07/06(Sun) </BLOCKQUOTE>
+      <BLOCKQUOTE>ども、最近麻雀始めました！！さん(^-^)/<BR>
+      <BR>
+      <FONT color="#990000">&gt;これで20符・30符・50符覚えておけば簡単な足し算だけで乗り切れます。</FONT><BR>
+      <BR>
+      いや、たしかに(^-^)V<BR>
+      <BR>
+      <FONT color="#000099">＞百貫雀さん</FONT><BR>
+      <FONT color="#990000">&gt;麻雀始めて３０年も経つのに、気づかなかった。</FONT><BR>
+      <BR>
+      同じく....(&gt;_&lt;)<BR>
+      <BR>
+      　90符・110符、特に110符は現実には発生しないと思いますが、誤差が出ないという点で この計算法は現実的ですね。そこで、とりあえず<FONT color="#ff0000">Ｃ計算法</FONT><FONT size="-1"><FONT color="#cc0000">（コロンブス計算法）</FONT>（仮名)</FONT>と命名（^-^； 。<BR>
+      <BR>
+      ※一応 検算してみた（^-^；<BR>
+      ○70符<BR>
+      子　50符一(3)翻（1600）+20符一(3)翻（700）＝70符一(3)翻（<FONT color="#cc0000">2300</FONT>=<FONT color="#0000cc">600/1200</FONT>）<BR>
+      　　50符二(4)翻（3200）+20符二(4)翻（1300）＝70符二(4)翻（<FONT color="#cc0000">4500</FONT>=<FONT color="#0000cc">1200/2300</FONT>）<BR>
+      <BR>
+      親　50符一(3)翻（2400）+20符一(3)翻（1000）＝70符一(3)翻（<FONT color="#cc0000">3400</FONT>=<FONT color="#0000cc">1200all</FONT>）<BR>
+      　 50符二(4)翻（4800）+20符二(4)翻（2000）＝70符二(4)翻（<FONT color="#cc0000">6800</FONT>=<FONT color="#0000cc">2300all</FONT>）</BLOCKQUOTE>
+      <BLOCKQUOTE>○90符<BR>
+      子　50符一(3)翻（1600）+40符一(3)翻（1300）＝90符一(3)翻（2900）<BR>
+      　　 50符二(4)翻（3200）+40符二(4)翻（2600）＝90符二(4)翻（5800）<BR>
+      <BR>
+      親　50符一(3)翻（2400）+40符一(3)翻（2000）＝90符一翻（4400)<BR>
+      　　 50符二(4)翻（4800）+40符二(4)翻（3900）＝90符二翻（8700)<BR>
+      <BR>○110符<BR>
+      子　50符一(3)翻（1600）+60符一(3)翻（2000）＝110符一(3)翻（3600）<BR>
+      　　 50符二(4)翻（3200）+60符二(4)翻（3900）＝110符二(4)翻（7100）<BR>
+      <BR>
+      親　50符一(3)翻（2400）+60符一(3)翻（2900）＝110符一(3)翻（ 5300)<BR>
+      　　 50符二(4)翻（4800）+60符二(4)翻（5800）＝110符二(4)翻（10600）<BR>
+      </BLOCKQUOTE>
+      </TD>
+    </TR>
+    <TR>
+      <TD bgcolor="#d7ffff">
+      <BLOCKQUOTE><BR>
+      <FONT size="+1" color="#cc0000">我打麻将</FONT> 投稿日：2008/07/06(Sun)<BR>
+<BR>
+      なんで百貫雀さんも浅見さんも知らなかったんだあぁ! (゜Д゜)<BR>
+      </BLOCKQUOTE>
+      </TD>
+    </TR>
+    <TR>
+      <TD bgcolor="#ffffca">
+      <BLOCKQUOTE><BR>
+      <FONT size="+1" color="#0000cc">あさみ</FONT> 投稿日：2008/07/07(Mon)<BR>
+      <BR>
+      　σ(-_-)に関して云えば、「<FONT color="#000099">70符を50/20に分ける</FONT>」という発想がなかった(笑)<BR>
+      　振り返ってみると、それには二つの理由があるようで<FONT size="-1">（後付けの理由のように思えるが(^-^) ）</FONT>。<BR>
+      <BR>
+      　一つには70符は23・45、34・68だけを覚えればいいので、ツモの場合も含めて単純に丸暗記。<BR>
+      　二つめは、どうしても「<FONT color="#000099">符計算は30符から</FONT>」と云うことが頭にある。そこで「<FONT color="#cc0000">２分割計算</FONT>」という便法を人に教える場合でも、自然に30/40に分けて教えていた。「<FONT color="#000099">それ以外の数字に分けたらどうか</FONT>」などと考えもしなかった、という感じ（^-^；<BR>
+      </BLOCKQUOTE>
+      </TD>
+    </TR>
+    <TR>
+      <TD bgcolor="#d9ffff">
+      <BLOCKQUOTE><BR>百貫雀 投稿日：2008/07/07(Mon)<BR>
+      <BR>　私の場合は、素点を丸覚えしており、それを倍々していました。<BR>　３０符は、子なら 0960点、親なら 1440点。<BR>　４０符は、子なら 1280点、親なら 1920点。<BR>　５０符は、子なら 1600点、親なら 2400点。<BR>　７０符は、子なら 2240点、親なら 3360点。<BR>　９０符は、子なら 2880点、親なら 4320点。<BR>　いつのまにか、切り上げ点も暗記してしまった、といった感じです。<BR>
+      　でも迷った時には、今でも素点に戻ります。←何と無駄なことか！<BR>
+      </BLOCKQUOTE>
+      </TD>
+    </TR>
+  </TBODY>
+</TABLE>
+</BLOCKQUOTE>
+</BLOCKQUOTE>
+<DIV align="center"><A href="G-labo18.html">以前へ</A>　　　以降へ　　<A href="GUESTLABO.html">目次へ</A></DIV>
+</BODY>
+</HTML>

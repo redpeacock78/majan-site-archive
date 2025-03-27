@@ -1,0 +1,126 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+<META name="GENERATOR" content="IBM HomePage Builder 2001 V5.0.3 for Windows">
+<META http-equiv="Content-Type" content="text/html; charset=Shift_JIS">
+<META http-equiv="Content-Style-Type" content="text/css">
+<TITLE>半荘百回で</TITLE>
+</HEAD>
+<BODY bgcolor="#d7ffd7" vlink="#990000" alink="#ffff00">
+<BLOCKQUOTE>
+<BLOCKQUOTE>
+<TABLE border="1" bgcolor="#000000">
+  <TBODY>
+    <TR>
+      <TD><FONT size="+3" color="#ffff00"><FONT size="-1"><FONT face="Lucida Sans" size="+3" color="#ffff00"><I><FONT size="+4"><FONT color="#ffff00"><FONT size="+1">　Ｐersonal</FONT><FONT size="+2"> <FONT color="#ffff00" size="-1">analyze</FONT></FONT><FONT size="+3"><FONT color="#ffff00">　</FONT></FONT></FONT></FONT></I></FONT></FONT><FONT face="Lucida Sans" color="#cc00cc"><FONT size="+4"><FONT color="#cc00cc"><FONT size="+1" color="#ffff00">諸分析　.</FONT></FONT></FONT></FONT></FONT></TD>
+    </TR>
+  </TBODY>
+</TABLE>
+</BLOCKQUOTE>
+</BLOCKQUOTE>
+<BLOCKQUOTE>
+<BLOCKQUOTE>
+<TABLE border="1" bgcolor="#cccc00">
+  <TBODY>
+    <TR>
+      <TD bgcolor="#8080ff"><FONT size="-1"><FONT size="+1" color="#ffffff"><BR>
+      　　　　（１）半荘百回で１回も役満をあがれない確率<BR>
+      <BR>
+      </FONT></FONT></TD>
+    </TR>
+    <TR>
+      <TD bgcolor="#ffffd7">
+      <BLOCKQUOTE><BR>
+      　ＲＴ公式戦(第５期〜第11期)における役満集計結果によると、14601半荘中に316回の役満が確認されています。
+      (cf.FMAJAN/MES9/#5138)<BR>
+      <BR>
+      　　 14601/316=46.20・・・<BR>
+      　　 <BR>
+      　これは、参加者４人の誰かが役満をあがる平均的半荘数を示しています。個人１人ひとりの場合は、これを４倍して　　4*46.20=184.8
+      (半荘)　　が、平均的に役満１回あがるのに必要半荘数と考えられます。この経験的数値をおおざっぱに、仮に「200(半荘)」と考えることにします。&lt;(_
+      _)&gt; <BR>
+      <BR>
+      <B><FONT color="#990000">問題</FONT></B><BR>
+      ＲＴユーザーが役満をあがる割合は、半荘200回に１回である。半荘を100回行う時、次の確率を求めよ。ただし、各半荘は独立であるとし、半荘１回に２回以上の役満出現は無いものとする。<BR>
+      <BR>
+      　　　（１）１回も役満をあがれない確率<BR>
+      　　　（２）３回以上役満をあがれる確率<BR>
+      <BR>
+      　[ヒント]<BR>
+      　２項分布をポアソン分布で近似すると、計算が楽です。<BR>
+      <BR>
+      ------------------------------------------------------<BR>
+      <B>RE:半荘100回で１回も役満をあがれない確率、へのコメント</B><BR>
+      <BR>
+      役満をあがった場合を○，上がれなかった場合を●として結果を表すと<BR>
+      ●●●○●●●●●●●●○●●●●●●●●・・・・・（計１００回）<BR>
+      例えば３回あがるケースはCONB(100,3）通りである。<BR>
+      そしてその１ケース毎の確率は和がれない=９７回，和がれる=３回だから<BR>
+      (199/200)^97*(1/200)^3　である。<BR>
+      よって半荘１００回でＮ回あがる確率Ｐ(Ｎ)は<BR>
+      <BR>
+      Ｐ(N)＝CONB(100,N)*(199/200)^(100-N)*(1/200)^N<BR>
+      Ｐ(0)= 60.58% <BR>
+      Ｐ(1)= 30.44% <BR>
+      Ｐ(2)= 7.57% <BR>
+      Ｐ(3)= 1.24% <BR>
+      <BR>
+      したがって（１）１回も役満をあがれない確率は、Ｐ(0)=60.58%<BR>
+      （２）３回以上役満をあがれる確率は、1-Ｐ(0)-Ｐ(1)-Ｐ(2)=1.41%<BR>
+      ------------------------------------------------------<BR>
+      <BR>
+      <B>[解答]半荘100回で１回も役満をあがれない確率<BR>
+      </B><BR>
+      私の用意していた解答です。<BR>
+      ２項分布をポアソン分布で近似します。<BR>
+      <BR>
+      解答：２項分布をポアソン分布で近似します。<BR>
+      　　　ｎが十分大きく、ｐが十分小さい時、<BR>
+      　　　<BR>
+      　　　　　　　　　　　　　　　　　　　　　λ^k<BR>
+      nＣk*ｐ^k*(1-ｐ)^(n-k) ≒ e^(-λ)*-----<BR>
+      　　　　　　　　　　　　　　　　　　　　　
+      k!<BR>
+      　　(k=0,1,2, ・・・・・)<BR>
+      <BR>
+      が成立します。ただし、λ＝ｎｐは余り大きくない。目安としては、ｎｐ＜５　ぐらいとされている。<BR>
+      （e：自然対数の底 2.71828・・・・）<BR>
+      （k!=k*(k-1)*・・・・*1）<BR>
+      <BR>
+      これを使って近似計算します。今の場合、<BR>
+      　λ＝ｎｐ＝100*(1/200)＝0.5　ですから、<BR>
+      役満をＸ回あがる確率をＰ(Ｘ)として、<BR>
+      <BR>
+      （１）Ｐ(0)＝100Ｃ0*(1/200)^0*(199/200)^100≒e^(-0.5)*(0.5^0)/0!＝e^(-0.5)<BR>
+      ＝0.6065 　→　約６１％<BR>
+      ----------------<BR>
+      <BR>
+      　（２）求める確率＝１−Ｐ(0)−Ｐ(1)−Ｐ(2)<BR>
+      <BR>
+      　 Ｐ(0)＝e^(-0.5)*(0.5^0)/0!<BR>
+      　 Ｐ(1)＝e^(-0.5)*(0.5^1)/1!<BR>
+      　 Ｐ(2)＝e^(-0.5)*(0.5^2)/2! 　であるから、<BR>
+      　 <BR>
+      　 Ｐ(0)＋Ｐ(1)＋Ｐ(2)＝e^(-0.5)*(1+0.5+0.125)<BR>
+      　 ＝e^(-0.5)*1.625<BR>
+      　 ＝0.98561<BR>
+      　 よって、<BR>
+      　 <BR>
+      　 (求める確率)＝１−Ｐ(0)−Ｐ(1)−Ｐ(2)<BR>
+      　 ＝１−0.98561<BR>
+      　 ＝0.01439 →　約１.４％<BR>
+      　 -----------------------------------------------------------------<BR>
+      combinationの２項分布で解いていただいた解答も勿論、大正解です。<BR>
+      近似計算というだけあって、２項分布・ポアソン分布とも、ほとんど同じ値を返しているのには感心させられます。（って当り前か(^_^;)、だから近似できるんだもんね）<BR>
+      by　多摩（ターニア）&lt;99/11/23&gt;<BR>
+      <BR>
+      </BLOCKQUOTE>
+      </TD>
+    </TR>
+  </TBODY>
+</TABLE>
+</BLOCKQUOTE>
+</BLOCKQUOTE>
+<P align="center"><A href="pers2.html">以降へ</A>　　　<A href="PERSONAL.html">目次へ</A></P>
+</BODY>
+</HTML>
